@@ -5,27 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicechann Studio. - Mac, iOS App Developer</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; text-align: center; padding: 50px; color: #333; }
-        h1 { color: #007aff; }
-        .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eaeaea; border-radius: 10px; }
-        a { color: #007aff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #333;
+            background: #f8f8f8;
+        }
+
+        h1 {
+            color: #007aff;
+        }
+
+        h3 {
+            margin-top: 32px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 28px;
+            border: 1px solid #eaeaea;
+            border-radius: 12px;
+            background: #fff;
+        }
+
+        .app-list {
+            margin-top: 20px;
+        }
+
+        .app-item {
+            margin: 18px 0;
+            line-height: 1.6;
+        }
+
+        .app-name {
+            font-weight: 700;
+        }
+
+        .app-description {
+            display: block;
+            color: #555;
+            font-size: 0.95em;
+            margin-top: 4px;
+        }
+
+        .links {
+            margin-top: 20px;
+            line-height: 1.8;
+        }
+
+        a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #888;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Nicechann Studio.</h1>
         <p>Welcome to my official app development website.</p>
-        
+
         <h3>Our Apps</h3>
-        <p><strong>SudokuAstra</strong> - The ultimate Sudoku experience.</p>
-        <p><strong>SudokuBurst</strong></p>
+
+        <div class="app-list">
+            <div class="app-item">
+                <span class="app-name">MellowFilm</span>
+                <span class="app-description">Film camera filters and photo/video editor for creating soft, nostalgic film tones.</span>
+            </div>
+
+            <div class="app-item">
+                <span class="app-name">SudokuAstra</span>
+                <span class="app-description">The ultimate Sudoku experience.</span>
+            </div>
+
+            <div class="app-item">
+                <span class="app-name">SudokuBurst</span>
+            </div>
+        </div>
 
         <h3>Support & Contact</h3>
-        <p>If you need help or have any questions about my apps, please contact me at:<br>
-        <a href="mailto:nicechann@gmail.com">nicechann@gmail.com</a></p>
-        
-        <p style="margin-top: 40px; font-size: 0.8em; color: #888;">&copy; 2026 ChangYu Kang. All rights reserved.</p>
+        <p>
+            If you need help or have any questions about my apps, please contact me at:<br>
+            <a href="mailto:nicechann@gmail.com">nicechann@gmail.com</a>
+        </p>
+
+        <h3>Privacy Policy</h3>
+        <div class="links">
+            <a href="/privacy.html">MellowFilm Privacy Policy</a>
+        </div>
+
+        <p class="footer">&copy; 2026 ChangYu Kang. All rights reserved.</p>
     </div>
 </body>
 </html>
