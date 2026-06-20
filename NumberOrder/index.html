@@ -1,1 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NumberOrder - Number Order Puzzle</title>
+  <meta name="description" content="NumberOrder is a fast number-order puzzle game where you read the rule and tap numbers in the correct order." />
+  <style>
+    :root {
+      --bg: #080d1a;
+      --card: #111827;
+      --text: #f8fafc;
+      --muted: #a8b3c7;
+      --blue: #5ecbff;
+      --yellow: #ffd86b;
+      --line: rgba(255,255,255,0.12);
+    }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(94,203,255,0.22), transparent 34%),
+        linear-gradient(180deg, #0b1020 0%, #050814 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 72px 24px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 56px 24px;
+      border: 1px solid rgba(94,203,255,0.28);
+      border-radius: 32px;
+      background: rgba(10, 16, 32, 0.74);
+      box-shadow: 0 24px 80px rgba(0,0,0,0.45);
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .bubble {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: white;
+      background: #101827;
+      border: 3px solid var(--blue);
+      box-shadow: 0 0 28px rgba(94,203,255,0.45);
+    }
+
+    .bubble.small {
+      width: 42px;
+      height: 42px;
+      border-color: #ff7a55;
+      font-size: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 8vw, 76px);
+      letter-spacing: -0.06em;
+      line-height: 1.05;
+    }
+
+    .subtitle {
+      margin: 20px auto 0;
+      max-width: 700px;
+      color: var(--muted);
+      font-size: clamp(18px, 3vw, 24px);
+      font-weight: 700;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 36px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      color: #07101f;
+      background: linear-gradient(90deg, var(--blue), var(--yellow));
+    }
+
+    .btn.secondary {
+      color: var(--text);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+    }
+
+    section {
+      margin-top: 32px;
+      padding: 28px;
+      border-radius: 24px;
+      background: rgba(255,255,255,0.055);
+      border: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 28px;
+      letter-spacing: -0.03em;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    footer {
+      margin-top: 36px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: var(--blue);
+      text-decoration: none;
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="hero">
+      <div class="logo" aria-hidden="true">
+        <span class="bubble small">8</span>
+        <span class="bubble">63</span>
+        <span class="bubble small" style="border-color:#ffd86b;">42</span>
+      </div>
+
+      <h1>NumberOrder</h1>
+      <p class="subtitle">A fast number-order puzzle game where you read the rule and tap numbers in the correct order.</p>
+
+      <div class="actions">
+        <a class="btn" href="#features">View Features</a>
+        <a class="btn secondary" href="support.html">Support</a>
+        <a class="btn secondary" href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+
+    <section id="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Read the rule and tap the numbers in the correct order.</li>
+        <li>Play Sprint mode for fast, focused number-order challenges.</li>
+        <li>Try Daily Challenge and update your best record every day.</li>
+        <li>Practice without a time limit to learn each rule at your own pace.</li>
+        <li>Customize your profile, country, rules, and visual themes.</li>
+        <li>Compete through Game Center leaderboards.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Game Modes</h2>
+      <ul>
+        <li><strong>Sprint:</strong> Tap quickly before time runs out.</li>
+        <li><strong>Daily:</strong> Challenge a new daily rule and record.</li>
+        <li><strong>Practice:</strong> Learn the rules with no time limit.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© NICECHANN STUDIO. All rights reserved.</p>
+      <p>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
