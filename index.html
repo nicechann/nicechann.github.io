@@ -3,40 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicechann Studio. - Mac, iOS App Developer</title>
+    <title>Nicechann Studio. - App Developer</title>
+    <meta name="description" content="Nicechann Studio is an independent app development website for iOS apps, puzzle games, photo editors, and productivity tools.">
+
     <style>
+        :root {
+            --primary: #007aff;
+            --text: #333333;
+            --subtext: #555555;
+            --muted: #888888;
+            --border: #eaeaea;
+            --background: #f8f8f8;
+            --card: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
+            margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             text-align: center;
-            padding: 50px;
-            color: #333;
-            background: #f8f8f8;
+            color: var(--text);
+            background: var(--background);
+        }
+
+        main {
+            padding: 50px 20px;
         }
 
         h1 {
-            color: #007aff;
+            margin: 0 0 16px;
+            color: var(--primary);
+            font-size: 2.2rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            margin: 40px 0 18px;
+            font-size: 1.45rem;
         }
 
         h3 {
-            margin-top: 32px;
+            margin: 0 0 6px;
+            font-size: 1.05rem;
+        }
+
+        p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         .container {
-            max-width: 680px;
+            max-width: 760px;
             margin: 0 auto;
-            padding: 28px;
-            border: 1px solid #eaeaea;
-            border-radius: 12px;
-            background: #fff;
+            padding: 36px 32px;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            background: var(--card);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+        }
+
+        .intro {
+            color: var(--subtext);
+            font-size: 1.02rem;
         }
 
         .app-list {
+            display: grid;
+            gap: 16px;
             margin-top: 20px;
+            text-align: left;
         }
 
         .app-item {
-            margin: 18px 0;
-            line-height: 1.6;
+            padding: 18px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: #ffffff;
         }
 
         .app-name {
@@ -45,67 +99,166 @@
 
         .app-description {
             display: block;
-            color: #555;
-            font-size: 0.95em;
-            margin-top: 4px;
+            color: var(--subtext);
+            font-size: 0.95rem;
+            margin-top: 6px;
+            line-height: 1.6;
         }
 
-        .links {
-            margin-top: 20px;
+        .app-links {
+            margin-top: 10px;
+            font-size: 0.92rem;
             line-height: 1.8;
         }
 
-        a {
-            color: #007aff;
-            text-decoration: none;
+        .section {
+            margin-top: 36px;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .links {
+            margin-top: 14px;
+            line-height: 2;
         }
 
         .footer {
-            margin-top: 40px;
-            font-size: 0.8em;
-            color: #888;
+            margin-top: 44px;
+            font-size: 0.82rem;
+            color: var(--muted);
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 28px 14px;
+            }
+
+            .container {
+                padding: 28px 18px;
+            }
+
+            h1 {
+                font-size: 1.85rem;
+            }
+
+            .app-item {
+                padding: 16px;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Nicechann Studio.</h1>
-        <p>Welcome to my official app development website.</p>
+    <main>
+        <div class="container">
+            <h1>Nicechann Studio.</h1>
+            <p class="intro">Welcome to my official app development website.</p>
 
-        <h3>Our Apps</h3>
+            <section class="section" aria-labelledby="apps-title">
+                <h2 id="apps-title">Our Apps</h2>
 
-        <div class="app-list">
-            <div class="app-item">
-                <span class="app-name">MellowFilm</span>
-                <span class="app-description">Film camera filters and photo/video editor for creating soft, nostalgic film tones.</span>
-            </div>
+                <div class="app-list">
+                    <div class="app-item">
+                        <h3>NumberOrder</h3>
+                        <span class="app-description">
+                            A simple number order puzzle game for quick brain training.
+                        </span>
+                        <div class="app-links">
+                            <a href="./NumberOrder/index.html">App Page</a>
+                            ·
+                            <a href="./NumberOrder/privacy.html">Privacy Policy</a>
+                            ·
+                            <a href="./NumberOrder/support.html">Support</a>
+                        </div>
+                    </div>
 
-            <div class="app-item">
-                <span class="app-name">SudokuAstra</span>
-                <span class="app-description">The ultimate Sudoku experience.</span>
-            </div>
+                    <div class="app-item">
+                        <h3>MellowFilm</h3>
+                        <span class="app-description">
+                            Film camera filters and photo/video editor for creating soft, nostalgic film tones.
+                        </span>
+                        <div class="app-links">
+                            <a href="./mellowfilm.html">App Page</a>
+                            ·
+                            <a href="./mellowfilm-privacy.html">Privacy Policy</a>
+                        </div>
+                    </div>
 
-            <div class="app-item">
-                <span class="app-name">SudokuBurst</span>
-            </div>
+                    <div class="app-item">
+                        <h3>MellowFilter</h3>
+                        <span class="app-description">
+                            Photo and video filter editor for creating emotional tones and reusable color recipes.
+                        </span>
+                        <div class="app-links">
+                            <a href="./mellowfilter.html">App Page</a>
+                            ·
+                            <a href="./mellowfilter-privacy.html">Privacy Policy</a>
+                            ·
+                            <a href="./mellowfilter-terms.html">Terms</a>
+                        </div>
+                    </div>
+
+                    <div class="app-item">
+                        <h3>MellowDay</h3>
+                        <span class="app-description">
+                            A daily video diary app for collecting short clips, photos, and memories.
+                        </span>
+                        <div class="app-links">
+                            <a href="./mellowday.html">App Page</a>
+                            ·
+                            <a href="./mellowday-privacy.html">Privacy Policy</a>
+                        </div>
+                    </div>
+
+                    <div class="app-item">
+                        <h3>NoteGarden</h3>
+                        <span class="app-description">
+                            A simple note and idea organizing app for keeping thoughts in one place.
+                        </span>
+                        <div class="app-links">
+                            <a href="./notegarden.html">App Page</a>
+                            ·
+                            <a href="./notegarden-privacy.html">Privacy Policy</a>
+                            ·
+                            <a href="./notegarden-support.html">Support</a>
+                        </div>
+                    </div>
+
+                    <div class="app-item">
+                        <h3>SudokuAstra</h3>
+                        <span class="app-description">
+                            A Sudoku puzzle experience designed for focused play and daily challenges.
+                        </span>
+                    </div>
+
+                    <div class="app-item">
+                        <h3>SudokuBurst</h3>
+                        <span class="app-description">
+                            A fast and colorful Sudoku puzzle game.
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="support-title">
+                <h2 id="support-title">Support & Contact</h2>
+                <p>
+                    If you need help or have any questions about my apps, please contact me at:<br>
+                    <a href="mailto:nicechann@gmail.com">nicechann@gmail.com</a>
+                </p>
+            </section>
+
+            <section class="section" aria-labelledby="privacy-title">
+                <h2 id="privacy-title">Privacy Policy</h2>
+                <div class="links">
+                    <a href="./NumberOrder/privacy.html">NumberOrder Privacy Policy</a><br>
+                    <a href="./mellowfilm-privacy.html">MellowFilm Privacy Policy</a><br>
+                    <a href="./mellowfilter-privacy.html">MellowFilter Privacy Policy</a><br>
+                    <a href="./mellowday-privacy.html">MellowDay Privacy Policy</a><br>
+                    <a href="./notegarden-privacy.html">NoteGarden Privacy Policy</a>
+                </div>
+            </section>
+
+            <p class="footer">&copy; 2026 ChangYu Kang. All rights reserved.</p>
         </div>
-
-        <h3>Support & Contact</h3>
-        <p>
-            If you need help or have any questions about my apps, please contact me at:<br>
-            <a href="mailto:nicechann@gmail.com">nicechann@gmail.com</a>
-        </p>
-
-        <h3>Privacy Policy</h3>
-        <div class="links">
-            <a href="/privacy.html">MellowFilm Privacy Policy</a>
-        </div>
-
-        <p class="footer">&copy; 2026 ChangYu Kang. All rights reserved.</p>
-    </div>
+    </main>
 </body>
 </html>
