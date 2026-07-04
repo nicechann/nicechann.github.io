@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MellowSnap - 감성 스냅 카메라</title>
+  <meta name="description" content="MellowSnap은 프리셋 촬영, 감성 필터, 사진 편집, 여러 장 일괄 편집을 제공하는 스냅 카메라 앱입니다." />
+  <style>
+    :root {
+      --accent: #ff7f73;
+      --text: #24211f;
+      --sub: #716964;
+      --bg: #fff7f1;
+      --card: #ffffff;
+      --line: #f0dfd6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top, #fffaf6 0%, var(--bg) 72%);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+    .hero {
+      text-align: center;
+      padding: 56px 20px 36px;
+    }
+    .icon {
+      width: 88px;
+      height: 88px;
+      border-radius: 24px;
+      margin: 0 auto 24px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #ff9d8f, #ff735f);
+      color: white;
+      font-size: 42px;
+      box-shadow: 0 18px 40px rgba(255, 127, 115, .25);
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 7vw, 72px);
+      letter-spacing: -0.05em;
+      line-height: 1.05;
+    }
+    .lead {
+      margin: 22px auto 0;
+      max-width: 620px;
+      font-size: 20px;
+      color: var(--sub);
+      word-break: keep-all;
+    }
+    .badge {
+      display: inline-flex;
+      margin-top: 28px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255, 127, 115, .12);
+      color: var(--accent);
+      font-weight: 800;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 40px;
+    }
+    .card {
+      background: rgba(255,255,255,.82);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 16px 44px rgba(90, 58, 35, .06);
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      letter-spacing: -0.03em;
+    }
+    p { margin: 0; color: var(--sub); }
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 38px;
+    }
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      color: white;
+      background: var(--accent);
+    }
+    a.secondary {
+      color: var(--text);
+      background: white;
+      border: 1px solid var(--line);
+    }
+    footer {
+      margin-top: 56px;
+      text-align: center;
+      color: #9a8f88;
+      font-size: 14px;
+    }
+    footer a {
+      color: #7d736d;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    @media (max-width: 720px) {
+      .wrap { padding: 36px 18px; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 34px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="icon">📷</div>
+      <h1>MellowSnap</h1>
+      <p class="lead">
+        프리셋을 고르고 바로 촬영하고, 앨범 속 사진도 감성 필터로 편집하세요.
+        여러 장 일괄 편집과 전후 비교까지 한 화면에서 자연스럽게 이어집니다.
+      </p>
+      <div class="badge">감성 스냅 카메라 · 사진 편집 앱</div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>프리셋 촬영</h2>
+        <p>촬영 전 화면에서 원하는 무드를 미리 확인하고 셔터를 눌러 감성 스냅을 완성할 수 있습니다.</p>
+      </div>
+      <div class="card">
+        <h2>사진 편집</h2>
+        <p>필터, 보정, 효과, 지우개, 비율, 출력 설정을 이어서 작업하고 결과를 저장할 수 있습니다.</p>
+      </div>
+      <div class="card">
+        <h2>여러 사진 일괄 편집</h2>
+        <p>같은 필터를 여러 장의 사진에 빠르게 적용해 반복 작업 시간을 줄일 수 있습니다.</p>
+      </div>
+      <div class="card">
+        <h2>전후 비교</h2>
+        <p>좌우 또는 상하 비교로 원본과 편집 결과를 직관적으로 확인할 수 있습니다.</p>
+      </div>
+    </section>
+
+    <div class="links">
+      <a class="button secondary" href="support.html">Support</a>
+      <a class="button secondary" href="privacy.html">Privacy Policy</a>
+    </div>
+
+    <footer>
+      © 2026 Nicechann Studio
+      <br />
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </footer>
+  </main>
+</body>
+</html>
