@@ -1,36 +1,49 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MellowSnap - 감성 스냅 카메라</title>
-  <meta name="description" content="MellowSnap은 프리셋 촬영, 감성 필터, 사진 편집, 여러 장 일괄 편집을 제공하는 스냅 카메라 앱입니다." />
+  <title>MellowSnap - Preset Camera & Photo Filter Editor</title>
+  <meta
+    name="description"
+    content="MellowSnap is a preset camera and photo editing app for capturing and editing everyday moments with soft, natural filters."
+  />
   <style>
     :root {
       --accent: #ff7f73;
+      --accent-dark: #f16458;
       --text: #24211f;
-      --sub: #716964;
+      --sub: #6f6660;
+      --muted: #9a8f88;
       --bg: #fff7f1;
       --card: #ffffff;
       --line: #f0dfd6;
     }
-    * { box-sizing: border-box; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color: var(--text);
-      background: radial-gradient(circle at top, #fffaf6 0%, var(--bg) 72%);
+      background:
+        radial-gradient(circle at top, #fffdf9 0%, #fff7f1 56%, #fff1e8 100%);
       line-height: 1.65;
     }
+
     .wrap {
-      max-width: 880px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 64px 24px;
     }
+
     .hero {
       text-align: center;
-      padding: 56px 20px 36px;
+      padding: 56px 20px 40px;
     }
+
     .icon {
       width: 88px;
       height: 88px;
@@ -41,56 +54,99 @@
       background: linear-gradient(135deg, #ff9d8f, #ff735f);
       color: white;
       font-size: 42px;
-      box-shadow: 0 18px 40px rgba(255, 127, 115, .25);
+      box-shadow: 0 18px 40px rgba(255, 127, 115, 0.25);
     }
+
     h1 {
       margin: 0;
-      font-size: clamp(42px, 7vw, 72px);
-      letter-spacing: -0.05em;
+      font-size: clamp(44px, 7vw, 76px);
+      letter-spacing: -0.055em;
       line-height: 1.05;
     }
+
     .lead {
       margin: 22px auto 0;
-      max-width: 620px;
+      max-width: 680px;
       font-size: 20px;
       color: var(--sub);
       word-break: keep-all;
     }
+
     .badge {
       display: inline-flex;
-      margin-top: 28px;
+      margin-top: 30px;
       padding: 10px 16px;
       border-radius: 999px;
-      background: rgba(255, 127, 115, .12);
-      color: var(--accent);
+      background: rgba(255, 127, 115, 0.12);
+      color: var(--accent-dark);
       font-weight: 800;
+      letter-spacing: -0.01em;
     }
+
+    .section-title {
+      margin: 64px 0 20px;
+      text-align: center;
+      font-size: 32px;
+      letter-spacing: -0.04em;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 18px;
-      margin-top: 40px;
+      margin-top: 28px;
     }
+
     .card {
-      background: rgba(255,255,255,.82);
+      background: rgba(255, 255, 255, 0.86);
       border: 1px solid var(--line);
       border-radius: 28px;
       padding: 28px;
-      box-shadow: 0 16px 44px rgba(90, 58, 35, .06);
+      box-shadow: 0 16px 44px rgba(90, 58, 35, 0.06);
     }
+
     h2 {
       margin: 0 0 12px;
       font-size: 24px;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.035em;
+      line-height: 1.2;
     }
-    p { margin: 0; color: var(--sub); }
+
+    p {
+      margin: 0;
+      color: var(--sub);
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .feature-list li {
+      position: relative;
+      padding-left: 22px;
+      color: var(--sub);
+    }
+
+    .feature-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 900;
+    }
+
     .links {
       display: flex;
       justify-content: center;
       gap: 12px;
       flex-wrap: wrap;
-      margin-top: 38px;
+      margin-top: 48px;
     }
+
     a.button {
       display: inline-flex;
       align-items: center;
@@ -103,26 +159,43 @@
       color: white;
       background: var(--accent);
     }
+
     a.secondary {
       color: var(--text);
       background: white;
       border: 1px solid var(--line);
     }
+
     footer {
-      margin-top: 56px;
+      margin-top: 64px;
       text-align: center;
-      color: #9a8f88;
+      color: var(--muted);
       font-size: 14px;
     }
+
     footer a {
       color: #7d736d;
       text-decoration: none;
       margin: 0 8px;
+      font-weight: 700;
     }
+
     @media (max-width: 720px) {
-      .wrap { padding: 36px 18px; }
-      .grid { grid-template-columns: 1fr; }
-      .hero { padding-top: 34px; }
+      .wrap {
+        padding: 36px 18px;
+      }
+
+      .hero {
+        padding-top: 34px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
@@ -132,29 +205,58 @@
       <div class="icon">📷</div>
       <h1>MellowSnap</h1>
       <p class="lead">
-        프리셋을 고르고 바로 촬영하고, 앨범 속 사진도 감성 필터로 편집하세요.
-        여러 장 일괄 편집과 전후 비교까지 한 화면에서 자연스럽게 이어집니다.
+        Choose a preset, capture the mood, and edit your photos with soft, natural filters.
+        MellowSnap brings preset camera, photo editing, before-and-after comparison,
+        and batch editing into one simple flow.
       </p>
-      <div class="badge">감성 스냅 카메라 · 사진 편집 앱</div>
+      <div class="badge">Preset Camera · Photo Filter Editor</div>
     </section>
+
+    <h2 class="section-title">Capture and edit with a mellow mood</h2>
 
     <section class="grid">
       <div class="card">
-        <h2>프리셋 촬영</h2>
-        <p>촬영 전 화면에서 원하는 무드를 미리 확인하고 셔터를 눌러 감성 스냅을 완성할 수 있습니다.</p>
+        <h2>Preset Camera</h2>
+        <p>
+          Preview the mood before you shoot and capture soft, natural snaps with your favorite preset.
+        </p>
       </div>
+
       <div class="card">
-        <h2>사진 편집</h2>
-        <p>필터, 보정, 효과, 지우개, 비율, 출력 설정을 이어서 작업하고 결과를 저장할 수 있습니다.</p>
+        <h2>Photo Editing</h2>
+        <p>
+          Apply filters, adjust tone, add effects, erase areas, change ratio, and export your result
+          in one editing flow.
+        </p>
       </div>
+
       <div class="card">
-        <h2>여러 사진 일괄 편집</h2>
-        <p>같은 필터를 여러 장의 사진에 빠르게 적용해 반복 작업 시간을 줄일 수 있습니다.</p>
+        <h2>Batch Editing</h2>
+        <p>
+          Apply the same filter to multiple photos at once and reduce repetitive editing work.
+        </p>
       </div>
+
       <div class="card">
-        <h2>전후 비교</h2>
-        <p>좌우 또는 상하 비교로 원본과 편집 결과를 직관적으로 확인할 수 있습니다.</p>
+        <h2>Before & After</h2>
+        <p>
+          Compare the original and edited photo side by side or top and bottom before saving.
+        </p>
       </div>
+    </section>
+
+    <section class="card" style="margin-top: 28px;">
+      <h2>MellowSnap Pro</h2>
+      <p>
+        MellowSnap Pro unlocks all Pro filters and batch editing features with a one-time purchase.
+        Future Pro filter updates are included.
+      </p>
+      <ul class="feature-list">
+        <li>Unlock all Pro filters</li>
+        <li>Edit multiple photos at once</li>
+        <li>Use future Pro filter additions</li>
+        <li>Restore your purchase anytime with the same Apple ID</li>
+      </ul>
     </section>
 
     <div class="links">
