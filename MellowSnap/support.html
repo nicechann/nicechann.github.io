@@ -1,75 +1,164 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MellowSnap Support</title>
+  <meta
+    name="description"
+    content="Support page for MellowSnap, a preset camera and photo filter editor by Nicechann Studio."
+  />
   <style>
+    :root {
+      --accent: #ff7f73;
+      --accent-dark: #f16458;
+      --text: #24211f;
+      --sub: #6f6660;
+      --muted: #9a8f88;
+      --bg: #fff7f1;
+      --card: #ffffff;
+      --line: #f0dfd6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: #24211f;
+      color: var(--text);
       background: #fff7f1;
       line-height: 1.7;
     }
+
     main {
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 auto;
       padding: 56px 22px;
     }
+
     h1 {
       font-size: 42px;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.045em;
       margin: 0 0 12px;
+      line-height: 1.1;
     }
+
     h2 {
-      margin-top: 36px;
+      margin: 0 0 12px;
       font-size: 24px;
+      letter-spacing: -0.035em;
     }
-    p, li { color: #6f6660; }
+
+    p,
+    li {
+      color: var(--sub);
+    }
+
+    .intro {
+      margin: 0 0 28px;
+      font-size: 18px;
+    }
+
     .card {
       background: white;
-      border: 1px solid #f0dfd6;
+      border: 1px solid var(--line);
       border-radius: 24px;
       padding: 24px;
       margin-top: 18px;
+      box-shadow: 0 14px 36px rgba(90, 58, 35, 0.05);
     }
-    a { color: #ff7668; font-weight: 700; }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 22px;
+    }
+
+    a {
+      color: var(--accent-dark);
+      font-weight: 800;
+    }
+
+    .back {
+      margin-top: 32px;
+    }
+
+    footer {
+      margin-top: 48px;
+      color: var(--muted);
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
   <main>
     <h1>MellowSnap Support</h1>
-    <p>MellowSnap 사용 중 문제가 있거나 문의가 있다면 아래 내용을 확인해 주세요.</p>
+    <p class="intro">
+      If you need help with MellowSnap, please check the information below or contact us by email.
+    </p>
 
     <section class="card">
-      <h2>문의</h2>
+      <h2>Contact</h2>
       <p>
-        앱 사용, 결제, 오류 제보, 기능 제안은 아래 이메일로 보내주세요.
+        For app support, purchase issues, bug reports, or feature requests, please contact:
       </p>
       <p>
         Email: <a href="mailto:nicechann@icloud.com">nicechann@icloud.com</a>
       </p>
+      <p>
+        Korean support is also available.
+      </p>
     </section>
 
     <section class="card">
-      <h2>자주 묻는 질문</h2>
+      <h2>Frequently Asked Questions</h2>
       <ul>
-        <li>사진 저장이 되지 않으면 iOS 설정에서 사진 보관함 권한을 확인해 주세요.</li>
-        <li>카메라 화면이 보이지 않으면 카메라 권한을 허용했는지 확인해 주세요.</li>
-        <li>Pro 구매가 보이지 않으면 네트워크 연결과 App Store 계정 상태를 확인해 주세요.</li>
-        <li>구매 후 기능이 열리지 않으면 앱 안의 “이전 구매 복원”을 실행해 주세요.</li>
+        <li>
+          If photos are not saved, please check Photo Library permission in iOS Settings.
+        </li>
+        <li>
+          If the camera preview is not available, please check Camera permission in iOS Settings.
+        </li>
+        <li>
+          If video recording does not include sound, please check Microphone permission in iOS Settings.
+        </li>
+        <li>
+          If Pro features are not unlocked after purchase, please try “Restore Purchases” in the app.
+        </li>
+        <li>
+          If product information is not displayed, please check your network connection and App Store account status.
+        </li>
       </ul>
     </section>
 
     <section class="card">
-      <h2>앱 정보</h2>
+      <h2>About MellowSnap</h2>
       <p>
-        MellowSnap은 프리셋 촬영, 감성 필터, 사진 편집, 여러 장 일괄 편집을 제공하는 스냅 카메라 앱입니다.
+        MellowSnap is a preset camera and photo editing app for capturing and editing everyday moments
+        with soft, natural filters.
+      </p>
+      <p>
+        You can choose a preset before shooting, import photos from your library, compare before and after,
+        and apply the same filter to multiple photos at once.
       </p>
     </section>
 
-    <p><a href="./">MellowSnap 소개 페이지로 돌아가기</a></p>
+    <section class="card">
+      <h2>MellowSnap Pro</h2>
+      <p>
+        MellowSnap Pro is a one-time in-app purchase that unlocks Pro filters and batch editing features.
+        If you have already purchased Pro, use “Restore Purchases” in the app with the same Apple ID.
+      </p>
+    </section>
+
+    <p class="back">
+      <a href="./">Back to MellowSnap</a>
+    </p>
+
+    <footer>
+      © 2026 Nicechann Studio
+    </footer>
   </main>
 </body>
 </html>
