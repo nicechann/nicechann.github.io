@@ -300,3 +300,50 @@ footer a { color: inherit; }
   .nav-links { justify-content: flex-start; }
   main { padding-top: 36px; }
 }
+
+[hidden] { display: none !important; }
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.language-switch {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-solid);
+}
+
+.language-switch button {
+  min-height: 34px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 9px;
+  color: var(--muted);
+  background: transparent;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.language-switch button[aria-pressed="true"] {
+  color: var(--text);
+  background: var(--brand-soft);
+}
+
+@media (max-width: 900px) {
+  .nav-actions {
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    gap: 7px;
+  }
+}
+
+@media (max-width: 520px) {
+  .nav-actions { align-items: flex-start; }
+}
