@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StatusLab shows your iPhone status, guides hardware self-checks, and keeps recent diagnostic results and widgets in one place.">
+  <meta name="theme-color" content="#078cf0">
+  <meta property="og:title" content="StatusLab — Device Status & Diagnostics">
+  <meta property="og:description" content="Check your iPhone status, run guided hardware tests, and review diagnostic results.">
+  <meta property="og:image" content="https://nicechann.github.io/statuslab/assets/app-icon.png">
+  <meta property="og:type" content="website">
+  <title>StatusLab — Device Status & Diagnostics</title>
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/language.js"></script>
+</head>
+<body
+  data-title-en="StatusLab — Device Status & Diagnostics"
+  data-title-ko="StatusLab — 아이폰 상태와 기기 진단"
+  data-title-ja="StatusLab — iPhoneの状態と端末診断"
+  data-description-en="StatusLab shows your iPhone status, guides hardware self-checks, and keeps recent diagnostic results and widgets in one place."
+  data-description-ko="StatusLab은 아이폰의 현재 상태를 확인하고 하드웨어 자가진단, 기록과 위젯을 한곳에서 관리하는 앱입니다."
+  data-description-ja="StatusLabはiPhoneの現在の状態を確認し、ハードウェアのセルフチェック、履歴、ウィジェットをまとめて管理するアプリです."
+>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="./">
+        <img src="assets/app-icon.png" alt="StatusLab app icon">
+        <span>StatusLab</span>
+      </a>
+      <div class="nav-actions">
+        <div class="nav-links">
+          <a href="./" aria-current="page"><span data-lang="en">Overview</span><span data-lang="ko" hidden>소개</span><span data-lang="ja" hidden>概要</span></a>
+          <a href="support/"><span data-lang="en">Support</span><span data-lang="ko" hidden>지원</span><span data-lang="ja" hidden>サポート</span></a>
+          <a href="privacy/"><span data-lang="en">Privacy</span><span data-lang="ko" hidden>개인정보처리방침</span><span data-lang="ja" hidden>プライバシー</span></a>
+        </div>
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" data-language-button="en" aria-pressed="true">English</button>
+          <button type="button" data-language-button="ko" aria-pressed="false">한국어</button>
+          <button type="button" data-language-button="ja" aria-pressed="false">日本語</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div data-lang="en">
+      <section class="hero">
+        <div>
+          <span class="eyebrow">iPhone status · Guided diagnostics · iOS 17+</span>
+          <h1>Know your iPhone.<br>Check it yourself.</h1>
+          <p class="lead">StatusLab brings battery, storage, network, thermal status, guided hardware checks, recent results, and widgets into one clear workspace.</p>
+          <div class="actions">
+            <span class="button primary disabled" aria-disabled="true">Coming soon on the App Store</span>
+            <a class="button" href="support/">Get Support</a>
+          </div>
+        </div>
+        <img class="hero-icon" src="assets/app-icon.png" alt="StatusLab app icon">
+      </section>
+
+      <section class="section" aria-labelledby="features-en">
+        <h2 id="features-en">A practical checkup for your device</h2>
+        <div class="grid">
+          <article class="card"><div class="symbol" aria-hidden="true">◴</div><h3>Status dashboard</h3><p>Review battery level and charging, available storage, network path, thermal state, and the latest diagnostic result.</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">✓</div><h3>Guided hardware checks</h3><p>Check the display, touch and multi-touch, cameras, flash, microphone, speaker, haptics, and motion sensors.</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">⌁</div><h3>Internet response test</h3><p>Run an optional HTTPS response check separately from the current Wi-Fi or cellular connection status.</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">▣</div><h3>Home and Lock Screen widgets</h3><p>See current status or recent diagnostic results from Home Screen, Lock Screen, and StandBy widgets.</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">↺</div><h3>Diagnostic history</h3><p>Save completed checks on your device, review item-level results, and resume an interrupted diagnostic session.</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">⇧</div><h3>Reports and sharing</h3><p>Share a summary image, and use Pro for detailed PDF reports and before-and-after repair comparisons.</p></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="plans-en">
+        <h2 id="plans-en">Start free. Unlock Pro once.</h2>
+        <div class="plan-grid">
+          <article class="plan-card">
+            <span class="eyebrow">Free</span>
+            <h3>Core status and diagnostics</h3>
+            <ul>
+              <li>Status dashboard and guided hardware checks</li>
+              <li>Recent five diagnostic records</li>
+              <li>Summary image sharing</li>
+              <li>Basic Home and Lock Screen widgets</li>
+            </ul>
+          </article>
+          <article class="plan-card pro">
+            <span class="eyebrow">One-time purchase · No subscription</span>
+            <h3>StatusLab Pro</h3>
+            <ul>
+              <li>Full diagnostic history</li>
+              <li>Detailed diagnostic and comparison PDFs</li>
+              <li>Before-and-after repair comparison</li>
+              <li>Widget customization and all Lock Screen styles</li>
+              <li>Scheduled diagnostic reminders and storage thresholds</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="document">
+          <h2>Important note</h2>
+          <p>StatusLab uses information available through iOS and checks confirmed directly by the user. Its results do not replace Apple’s official hardware diagnostics, repair inspection, or warranty decision.</p>
+          <div class="actions">
+            <a class="button" href="privacy/">Read the Privacy Policy</a>
+            <a class="button" href="mailto:nicechann@gmail.com?subject=StatusLab%20Support">Email Support</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div data-lang="ko" hidden>
+      <section class="hero">
+        <div>
+          <span class="eyebrow">아이폰 상태 · 단계별 자가진단 · iOS 17 이상</span>
+          <h1>아이폰 상태를 보고,<br>필요할 때 직접 점검하세요.</h1>
+          <p class="lead">StatusLab은 배터리, 저장공간, 네트워크, 발열 상태와 하드웨어 자가진단, 최근 결과, 위젯을 한곳에서 확인하는 앱입니다.</p>
+          <div class="actions">
+            <span class="button primary disabled" aria-disabled="true">App Store 출시 준비 중</span>
+            <a class="button" href="support/?lang=ko">지원 받기</a>
+          </div>
+        </div>
+        <img class="hero-icon" src="assets/app-icon.png" alt="StatusLab 앱 아이콘">
+      </section>
+
+      <section class="section" aria-labelledby="features-ko">
+        <h2 id="features-ko">기기 상태를 확인하는 실용적인 방법</h2>
+        <div class="grid">
+          <article class="card"><div class="symbol" aria-hidden="true">◴</div><h3>상태 대시보드</h3><p>배터리 잔량과 충전, 사용 가능한 저장공간, 네트워크 경로, 발열 상태, 최근 진단 결과를 확인합니다.</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">✓</div><h3>단계별 하드웨어 점검</h3><p>화면, 터치와 멀티터치, 카메라, 플래시, 마이크, 스피커, 햅틱, 동작 센서를 직접 확인합니다.</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">⌁</div><h3>인터넷 응답 검사</h3><p>현재 Wi-Fi·셀룰러 연결 상태와 별도로, 사용자가 원할 때 외부 HTTPS 응답을 확인합니다.</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">▣</div><h3>홈·잠금화면 위젯</h3><p>홈 화면, 잠금화면, StandBy에서 현재 상태 또는 최근 진단 결과를 확인합니다.</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">↺</div><h3>진단 기록</h3><p>완료한 점검 결과를 기기에 저장하고 항목별 결과를 보거나 중단한 진단을 이어서 진행합니다.</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">⇧</div><h3>리포트와 공유</h3><p>요약 이미지를 공유하고, Pro에서 상세 PDF와 수리 전후 비교 리포트를 만들 수 있습니다.</p></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="plans-ko">
+        <h2 id="plans-ko">무료로 시작하고 한 번의 구매로 Pro 잠금 해제</h2>
+        <div class="plan-grid">
+          <article class="plan-card">
+            <span class="eyebrow">무료</span>
+            <h3>기본 상태 확인과 자가진단</h3>
+            <ul>
+              <li>상태 대시보드와 단계별 하드웨어 점검</li>
+              <li>최근 진단 기록 5개 상세 열람</li>
+              <li>요약 이미지 공유</li>
+              <li>기본 홈·잠금화면 위젯</li>
+            </ul>
+          </article>
+          <article class="plan-card pro">
+            <span class="eyebrow">한 번 구매 · 구독 없음</span>
+            <h3>StatusLab Pro</h3>
+            <ul>
+              <li>전체 진단 기록 상세 열람</li>
+              <li>상세 진단 PDF와 비교 PDF</li>
+              <li>수리 전후 결과 비교</li>
+              <li>위젯 설정과 모든 잠금화면 스타일</li>
+              <li>정기 진단 알림과 저장공간 경고 기준</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="document">
+          <h2>확인해 주세요</h2>
+          <p>StatusLab의 결과는 iOS가 제공하는 정보와 사용자의 직접 확인을 기반으로 합니다. Apple 공식 하드웨어 진단, 수리점 검사 또는 보증 판정을 대신하지 않습니다.</p>
+          <div class="actions">
+            <a class="button" href="privacy/?lang=ko">개인정보처리방침 보기</a>
+            <a class="button" href="mailto:nicechann@gmail.com?subject=StatusLab%20문의">이메일 문의</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div data-lang="ja" hidden>
+      <section class="hero">
+        <div>
+          <span class="eyebrow">iPhoneの状態 · 手順付きセルフ診断 · iOS 17以降</span>
+          <h1>iPhoneの状態を確認し、<br>必要なときに自分でチェック。</h1>
+          <p class="lead">StatusLabは、バッテリー、ストレージ、ネットワーク、温度状態、ハードウェア診断、最近の結果、ウィジェットを一か所で確認できるアプリです。</p>
+          <div class="actions">
+            <span class="button primary disabled" aria-disabled="true">App Store公開準備中</span>
+            <a class="button" href="support/?lang=ja">サポート</a>
+          </div>
+        </div>
+        <img class="hero-icon" src="assets/app-icon.png" alt="StatusLabアプリアイコン">
+      </section>
+
+      <section class="section" aria-labelledby="features-ja">
+        <h2 id="features-ja">端末の状態を確認する実用的な方法</h2>
+        <div class="grid">
+          <article class="card"><div class="symbol" aria-hidden="true">◴</div><h3>状態ダッシュボード</h3><p>バッテリー残量と充電、空きストレージ、ネットワーク経路、温度状態、最新の診断結果を確認します。</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">✓</div><h3>手順付きハードウェアチェック</h3><p>画面、タッチとマルチタッチ、カメラ、フラッシュ、マイク、スピーカー、触覚、モーションセンサーを確認します。</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">⌁</div><h3>インターネット応答テスト</h3><p>現在のWi-Fi・モバイル通信の状態とは別に、必要なときだけ外部HTTPS応答を確認します。</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">▣</div><h3>ホーム・ロック画面ウィジェット</h3><p>ホーム画面、ロック画面、StandByで現在の状態または最近の診断結果を確認します。</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">↺</div><h3>診断履歴</h3><p>完了したチェックを端末内に保存し、項目別の結果を確認したり、中断した診断を再開したりできます。</p></article>
+          <article class="card"><div class="symbol" aria-hidden="true">⇧</div><h3>レポートと共有</h3><p>概要画像を共有し、Proでは詳細PDFと修理前後の比較レポートを作成できます。</p></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="plans-ja">
+        <h2 id="plans-ja">無料で開始し、一度の購入でProを解除</h2>
+        <div class="plan-grid">
+          <article class="plan-card">
+            <span class="eyebrow">無料</span>
+            <h3>基本的な状態確認とセルフ診断</h3>
+            <ul>
+              <li>状態ダッシュボードと手順付きハードウェアチェック</li>
+              <li>最近5件の診断履歴を詳細表示</li>
+              <li>概要画像の共有</li>
+              <li>基本的なホーム・ロック画面ウィジェット</li>
+            </ul>
+          </article>
+          <article class="plan-card pro">
+            <span class="eyebrow">買い切り · サブスクリプションなし</span>
+            <h3>StatusLab Pro</h3>
+            <ul>
+              <li>すべての診断履歴を詳細表示</li>
+              <li>詳細診断PDFと比較PDF</li>
+              <li>修理前後の結果比較</li>
+              <li>ウィジェット設定とすべてのロック画面スタイル</li>
+              <li>定期診断リマインダーとストレージ警告基準</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="document">
+          <h2>ご確認ください</h2>
+          <p>StatusLabの結果は、iOSが提供する情報とユーザー自身の確認に基づきます。Appleの公式ハードウェア診断、修理店の検査、保証判断に代わるものではありません。</p>
+          <div class="actions">
+            <a class="button" href="privacy/?lang=ja">プライバシーポリシー</a>
+            <a class="button" href="mailto:nicechann@gmail.com?subject=StatusLab%20お問い合わせ">メールで問い合わせ</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>© 2026 Nicechann Studio · <a href="support/">Support 지원 サポート</a> · <a href="privacy/">Privacy 개인정보처리방침 プライバシー</a></footer>
+</body>
+</html>
