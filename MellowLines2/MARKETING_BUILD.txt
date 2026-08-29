@@ -1,0 +1,4 @@
+MellowLines2 marketing build: github-stable-v3-20260829
+Marketing CSS: inline in index.html
+Support/Privacy CSS: style.css
+Assets: marketing-v3-*.png
