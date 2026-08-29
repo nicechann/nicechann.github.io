@@ -1,71 +1,186 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MellowLines 2 — One-Line Puzzle</title>
-  <meta name="description" content="MellowLines 2 is a focused one-line puzzle game with 1,000 levels, timed challenges, milestones, stars, hints, and Game Center leaderboards.">
-  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#0b0f14">
+  <meta name="description" content="MellowLines 2 — 한 줄로 모든 칸을 채우는 1,000레벨 퍼즐 게임.">
+  <title>MellowLines 2 — Nicechann Studio</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header class="wrap site-header">
-    <a class="brand" href="../">NICECHANN <span>STUDIO</span></a>
-    <nav aria-label="MellowLines 2 links">
-      <a href="./">Marketing</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="MellowLines 2 home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>NICETANN STUDIO</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#screens">Screens</a>
+      <a href="./support.html">Support</a>
+      <a href="./privacy.html">Privacy</a>
     </nav>
   </header>
 
   <main>
-    <section class="wrap hero">
-      <div class="eyebrow">One line. Every cell.</div>
-      <h1>MellowLines 2</h1>
-      <p>Draw one continuous line from start to goal while visiting every playable cell exactly once. Start simple, then take on bigger boards, timed challenges, and a 1,000-level journey.</p>
-      <div class="actions">
-        <a class="button" href="#features">Explore Features</a>
-        <a class="button secondary" href="support.html">Support</a>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ONE LINE. EVERY CELL.</p>
+        <h1>MellowLines 2</h1>
+        <p class="hero-title">한 줄로 모든 칸을 채우는<br><span>집중형 퍼즐 게임</span></p>
+        <p class="hero-description">
+          시작점에서 도착점까지 한 번의 선으로 연결하세요.
+          처음에는 가볍게 익히고, 뒤로 갈수록 더 큰 보드와 제한 시간,
+          챌린지, 별 보상이 이어집니다.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#screens">게임 화면 보기</a>
+          <a class="button button-secondary" href="./support.html">Support</a>
+        </div>
+
+        <ul class="hero-stats" aria-label="Game highlights">
+          <li><strong>1,000</strong><span>Levels</span></li>
+          <li><strong>100</strong><span>Level Milestones</span></li>
+          <li><strong>★</strong><span>Rewards & Helpers</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="glow glow-a"></div>
+        <div class="glow glow-b"></div>
+        <img src="./assets/screen-01-core.png" alt="MellowLines 2 기본 퍼즐 플레이 화면" fetchpriority="high">
       </div>
     </section>
 
-    <div class="wrap board-demo" aria-label="Decorative MellowLines 2 puzzle board">
-      <div class="board-grid">
-        <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell goal"></div><div class="cell"></div>
-        <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell"></div>
-        <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell"></div>
-        <div class="cell start"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-        <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+    <section class="section intro" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">CALM TO CHALLENGING</p>
+        <h2>쉽게 시작하고,<br>천천히 깊어지는 퍼즐</h2>
+        <p>
+          처음 10레벨은 규칙과 조작을 익히는 구간입니다.
+          이후부터 시간 제한과 보상이 더해지고, 다양한 크기의 퍼즐이 이어집니다.
+        </p>
       </div>
-    </div>
 
-    <section class="wrap" id="features">
-      <h2>A calm puzzle that keeps growing</h2>
-      <p class="lead">Learn the rule quickly, then keep moving through larger and more demanding puzzles.</p>
-      <div class="grid">
-        <article class="card"><div class="icon">▦</div><h3>1,000 levels</h3><p>A long-form puzzle journey with milestone landmarks every 100 levels.</p></article>
-        <article class="card"><div class="icon">⚡</div><h3>Timed challenges</h3><p>Special challenge levels raise the pressure while keeping the same one-line puzzle rule.</p></article>
-        <article class="card"><div class="icon">★</div><h3>Earn stars</h3><p>From Level 11 onward, first-time clears within the time limit can earn stars. Challenge clears reward more.</p></article>
-        <article class="card"><div class="icon">💡</div><h3>Hints & Answer Fill</h3><p>Use earned stars or optional item packs when you want a little help with a difficult puzzle.</p></article>
-        <article class="card"><div class="icon">↩</div><h3>Backtrack freely</h3><p>If your route is wrong, retrace the line and try a different path without starting over.</p></article>
-        <article class="card"><div class="icon">🏆</div><h3>Game Center</h3><p>Track your performance and compete through Apple Game Center leaderboards.</p></article>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon">▦</span>
+          <p class="feature-kicker">01</p>
+          <h3>1,000 레벨</h3>
+          <p>짧은 보드부터 큰 보드까지 이어지는 긴 여정.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">⚡</span>
+          <p class="feature-kicker">02</p>
+          <h3>챌린지</h3>
+          <p>제한 시간 안에 해결하는 별도 도전 구간.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">★</span>
+          <p class="feature-kicker">03</p>
+          <h3>별 보상</h3>
+          <p>시간 안에 첫 클리어하면 별을 모아 도움 기능으로 교환.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">↶</span>
+          <p class="feature-kicker">04</p>
+          <h3>자유로운 되돌리기</h3>
+          <p>잘못 그렸다면 지나온 길을 따라 자연스럽게 되돌아가세요.</p>
+        </article>
       </div>
     </section>
 
-    <section class="wrap">
-      <h2>Star rewards</h2>
-      <div class="card">
-        <div class="rule-row"><div class="rule-value">★1</div><div>First clear within the time limit from Level 11 onward.</div></div>
-        <div class="rule-row"><div class="rule-value">★5</div><div>First successful clear of a Challenge level within the time limit.</div></div>
-        <div class="rule-row"><div class="rule-value">★5</div><div>Exchange for one Hint.</div></div>
-        <div class="rule-row"><div class="rule-value">★10</div><div>Exchange for one Answer Fill.</div></div>
+    <section class="section screenshot-section" id="screens">
+      <div class="section-heading compact">
+        <p class="eyebrow">INSIDE THE GAME</p>
+        <h2>플레이의 흐름을 한눈에</h2>
+        <p>실제 게임 화면을 기반으로 MellowLines 2의 진행 구조를 확인하세요.</p>
+      </div>
+
+      <div class="screenshot-strip" aria-label="MellowLines 2 screenshots">
+        <figure class="screen-card">
+          <img src="./assets/screen-01-core.png" alt="한 줄로 모든 칸을 채우는 기본 퍼즐">
+          <figcaption><strong>한 줄 퍼즐</strong><span>모든 칸을 한 번씩 지나 도착점까지 연결</span></figcaption>
+        </figure>
+        <figure class="screen-card">
+          <img src="./assets/screen-02-tutorial.png" alt="초반 10레벨 튜토리얼 소개">
+          <figcaption><strong>처음 10레벨</strong><span>쉽게 시작해 규칙과 조작에 적응</span></figcaption>
+        </figure>
+        <figure class="screen-card">
+          <img src="./assets/screen-03-stars.png" alt="별 보상 화면">
+          <figcaption><strong>별 보상</strong><span>시간 안에 클리어하고 별을 획득</span></figcaption>
+        </figure>
+        <figure class="screen-card">
+          <img src="./assets/screen-04-store.png" alt="힌트와 답 채우기 스토어">
+          <figcaption><strong>힌트 & 답 채우기</strong><span>모은 별로 필요한 도움을 선택</span></figcaption>
+        </figure>
+        <figure class="screen-card">
+          <img src="./assets/screen-05-journey.png" alt="1000레벨 여정과 마일스톤">
+          <figcaption><strong>1,000레벨 여정</strong><span>100레벨마다 새로운 마일스톤</span></figcaption>
+        </figure>
+        <figure class="screen-card">
+          <img src="./assets/screen-06-challenge.png" alt="제한 시간 챌린지">
+          <figcaption><strong>챌린지</strong><span>제한 시간 안에 풀어내는 특별 도전</span></figcaption>
+        </figure>
+        <figure class="screen-card">
+          <img src="./assets/screen-07-depth.png" alt="후반 고난도 퍼즐">
+          <figcaption><strong>이어지는 도전</strong><span>후반으로 갈수록 더 커지고 깊어지는 퍼즐</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section journey-section">
+      <div class="journey-copy">
+        <p class="eyebrow">THE 1,000-LEVEL JOURNEY</p>
+        <h2>100레벨마다<br><span>새로운 마일스톤</span></h2>
+        <p>
+          한 번의 플레이로 끝나는 퍼즐이 아니라,
+          다음 레벨을 계속 이어가며 자신만의 여정을 쌓는 구조입니다.
+        </p>
+        <div class="journey-points">
+          <span>100</span><i></i><span>200</span><i></i><span>500</span><i></i><span>1000</span>
+        </div>
+      </div>
+      <img src="./assets/screen-05-journey.png" alt="MellowLines 2 1000레벨 여정 화면">
+    </section>
+
+    <section class="section reward-section">
+      <div class="reward-panel">
+        <div>
+          <p class="eyebrow">PLAY. EARN. KEEP GOING.</p>
+          <h2>플레이로 모은 별을<br>도움 기능으로 교환</h2>
+          <p>
+            레벨 11부터 제한 시간 안에 처음 클리어하면 ★1,
+            챌린지 첫 성공은 ★5. 모은 별은 힌트와 답 채우기에 사용할 수 있습니다.
+          </p>
+        </div>
+        <div class="reward-table" role="table" aria-label="Star rewards">
+          <div role="row"><b>★1</b><span>Lv11+ 제한 시간 내 첫 클리어</span></div>
+          <div role="row"><b>★5</b><span>챌린지 첫 성공</span></div>
+          <div role="row"><b>★5</b><span>힌트 1개 교환</span></div>
+          <div role="row"><b>★10</b><span>답 채우기 1개 교환</span></div>
+        </div>
+      </div>
+      <img src="./assets/screen-04-store.png" alt="별로 힌트와 답 채우기를 교환하는 스토어">
+    </section>
+
+    <section class="section closing">
+      <p class="eyebrow">MELLOWLINES 2</p>
+      <h2>선을 잇고, 칸을 채우고,<br>다음 레벨로.</h2>
+      <p>집중하고 싶을 때 가볍게 시작해 오래 이어갈 수 있는 한 줄 퍼즐.</p>
+      <div class="hero-actions center">
+        <a class="button button-primary" href="./support.html">Support</a>
+        <a class="button button-secondary" href="./privacy.html">Privacy Policy</a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <div class="footer-links"><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="../">Nicechann Studio</a></div>
-      <div>© 2026 NICECHANN STUDIO. All rights reserved.</div>
+  <footer class="site-footer">
+    <span>© 2026 Nicechann Studio</span>
+    <div>
+      <a href="./support.html">Support</a>
+      <a href="./privacy.html">Privacy Policy</a>
     </div>
   </footer>
 </body>
