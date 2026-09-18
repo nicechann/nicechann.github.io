@@ -1,264 +1,288 @@
-<!DOCTYPE html>
-<html lang="ko">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicechann Studio. - App Developer</title>
-    <meta name="description" content="Nicechann Studio is an independent app development website for iOS apps, puzzle games, photo editors, and productivity tools.">
-
-    <style>
-        :root {
-            --primary: #007aff;
-            --text: #333333;
-            --subtext: #555555;
-            --muted: #888888;
-            --border: #eaeaea;
-            --background: #f8f8f8;
-            --card: #ffffff;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            text-align: center;
-            color: var(--text);
-            background: var(--background);
-        }
-
-        main {
-            padding: 50px 20px;
-        }
-
-        h1 {
-            margin: 0 0 16px;
-            color: var(--primary);
-            font-size: 2.2rem;
-            line-height: 1.2;
-        }
-
-        h2 {
-            margin: 40px 0 18px;
-            font-size: 1.45rem;
-        }
-
-        h3 {
-            margin: 0 0 6px;
-            font-size: 1.05rem;
-        }
-
-        p {
-            margin: 0;
-            line-height: 1.6;
-        }
-
-        a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 760px;
-            margin: 0 auto;
-            padding: 36px 32px;
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            background: var(--card);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-        }
-
-        .intro {
-            color: var(--subtext);
-            font-size: 1.02rem;
-        }
-
-        .app-list {
-            display: grid;
-            gap: 16px;
-            margin-top: 20px;
-            text-align: left;
-        }
-
-        .app-item {
-            padding: 18px;
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            background: #ffffff;
-        }
-
-        .app-name {
-            font-weight: 700;
-        }
-
-        .app-description {
-            display: block;
-            color: var(--subtext);
-            font-size: 0.95rem;
-            margin-top: 6px;
-            line-height: 1.6;
-        }
-
-        .app-links {
-            margin-top: 10px;
-            font-size: 0.92rem;
-            line-height: 1.8;
-        }
-
-        .section {
-            margin-top: 36px;
-        }
-
-        .links {
-            margin-top: 14px;
-            line-height: 2;
-        }
-
-        .footer {
-            margin-top: 44px;
-            font-size: 0.82rem;
-            color: var(--muted);
-        }
-
-        @media (max-width: 600px) {
-            main {
-                padding: 28px 14px;
-            }
-
-            .container {
-                padding: 28px 18px;
-            }
-
-            h1 {
-                font-size: 1.85rem;
-            }
-
-            .app-item {
-                padding: 16px;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f2ed">
+  <meta name="description" content="Nicechann Studio creates focused apps, calm games, and practical tools for iPhone, iPad, and Mac.">
+  <title>Nicechann Studio — Apps, Games & Tools</title>
+  <link rel="stylesheet" href="./assets/home.css">
+  <script src="./assets/home.js" defer></script>
 </head>
-
 <body>
-    <main>
-        <div class="container">
-            <h1>Nicechann Studio.</h1>
-            <p class="intro">Welcome to my official app development website.</p>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Nicechann Studio home">
+      <span class="brand-mark" aria-hidden="true">N</span>
+      <span>Nicechann Studio</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#work">Apps</a>
+      <a href="#tools">Tools</a>
+      <a href="#about">About</a>
+      <a class="nav-contact" href="mailto:nicechann@gmail.com">Contact</a>
+    </nav>
+  </header>
 
-            <section class="section" aria-labelledby="apps-title">
-                <h2 id="apps-title">Our Apps</h2>
-
-                <div class="app-list">
-                    <div class="app-item">
-                        <h3>NumberOrder</h3>
-                        <span class="app-description">
-                            A simple number order puzzle game for quick brain training.
-                        </span>
-                        <div class="app-links">
-                            <a href="./NumberOrder/index.html">App Page</a>
-                            ·
-                            <a href="./NumberOrder/privacy.html">Privacy Policy</a>
-                            ·
-                            <a href="./NumberOrder/support.html">Support</a>
-                        </div>
-                    </div>
-
-                    <div class="app-item">
-                        <h3>MellowFilm</h3>
-                        <span class="app-description">
-                            Film camera filters and photo/video editor for creating soft, nostalgic film tones.
-                        </span>
-                        <div class="app-links">
-                            <a href="./mellowfilm.html">App Page</a>
-                            ·
-                            <a href="./mellowfilm-privacy.html">Privacy Policy</a>
-                        </div>
-                    </div>
-
-                    <div class="app-item">
-                        <h3>MellowFilter</h3>
-                        <span class="app-description">
-                            Photo and video filter editor for creating emotional tones and reusable color recipes.
-                        </span>
-                        <div class="app-links">
-                            <a href="./mellowfilter.html">App Page</a>
-                            ·
-                            <a href="./mellowfilter-privacy.html">Privacy Policy</a>
-                            ·
-                            <a href="./mellowfilter-terms.html">Terms</a>
-                        </div>
-                    </div>
-
-                    <div class="app-item">
-                        <h3>MellowDay</h3>
-                        <span class="app-description">
-                            A daily video diary app for collecting short clips, photos, and memories.
-                        </span>
-                        <div class="app-links">
-                            <a href="./mellowday.html">App Page</a>
-                            ·
-                            <a href="./mellowday-privacy.html">Privacy Policy</a>
-                        </div>
-                    </div>
-
-                    <div class="app-item">
-                        <h3>NoteGarden</h3>
-                        <span class="app-description">
-                            A simple note and idea organizing app for keeping thoughts in one place.
-                        </span>
-                        <div class="app-links">
-                            <a href="./notegarden.html">App Page</a>
-                            ·
-                            <a href="./notegarden-privacy.html">Privacy Policy</a>
-                            ·
-                            <a href="./notegarden-support.html">Support</a>
-                        </div>
-                    </div>
-
-                    <div class="app-item">
-                        <h3>SudokuAstra</h3>
-                        <span class="app-description">
-                            A Sudoku puzzle experience designed for focused play and daily challenges.
-                        </span>
-                    </div>
-
-                    <div class="app-item">
-                        <h3>SudokuBurst</h3>
-                        <span class="app-description">
-                            A fast and colorful Sudoku puzzle game.
-                        </span>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section" aria-labelledby="support-title">
-                <h2 id="support-title">Support & Contact</h2>
-                <p>
-                    If you need help or have any questions about my apps, please contact me at:<br>
-                    <a href="mailto:nicechann@gmail.com">nicechann@gmail.com</a>
-                </p>
-            </section>
-
-            <section class="section" aria-labelledby="privacy-title">
-                <h2 id="privacy-title">Privacy Policy</h2>
-                <div class="links">
-                    <a href="./NumberOrder/privacy.html">NumberOrder Privacy Policy</a><br>
-                    <a href="./mellowfilm-privacy.html">MellowFilm Privacy Policy</a><br>
-                    <a href="./mellowfilter-privacy.html">MellowFilter Privacy Policy</a><br>
-                    <a href="./mellowday-privacy.html">MellowDay Privacy Policy</a><br>
-                    <a href="./notegarden-privacy.html">NoteGarden Privacy Policy</a>
-                </div>
-            </section>
-
-            <p class="footer">&copy; 2026 ChangYu Kang. All rights reserved.</p>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Independent app studio · Seoul</p>
+        <h1 id="hero-title">Small apps.<br><span>Thoughtfully made.</span></h1>
+        <p class="hero-lead">Nicechann Studio creates focused utilities, calm games, and everyday tools for Apple platforms.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#work">Explore apps</a>
+          <a class="button button-ghost" href="./app-assets/">Open App Assets <span aria-hidden="true">↗</span></a>
         </div>
-    </main>
+      </div>
+
+      <div class="hero-art" aria-label="A collection of Nicechann Studio app tiles">
+        <a class="float-card float-convert" href="./mellowconvert/" aria-label="MellowConvert">
+          <span class="mini-icon mini-purple">M</span>
+          <span><strong>MellowConvert</strong><small>Mac Utility</small></span>
+        </a>
+        <a class="float-card float-cat" href="./MellowCat/" aria-label="MellowCat">
+          <img src="./MellowCat/app-icon.png" alt="" class="mini-icon image-icon">
+          <span><strong>MellowCat</strong><small>Menu Bar</small></span>
+        </a>
+        <a class="float-card float-lines" href="./MellowLines2/" aria-label="MellowLines 2">
+          <span class="mini-icon mini-green">↗</span>
+          <span><strong>MellowLines 2</strong><small>Puzzle</small></span>
+        </a>
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="center-badge" aria-hidden="true">
+          <span class="center-n">N</span>
+          <small>iOS · iPadOS · macOS</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Apps & games</h2>
+        </div>
+        <div class="filter-group" role="group" aria-label="Filter projects">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="utility" aria-pressed="false">Utilities</button>
+          <button class="filter" type="button" data-filter="creative" aria-pressed="false">Creative</button>
+          <button class="filter" type="button" data-filter="game" aria-pressed="false">Games</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card feature-card" data-category="utility">
+          <a class="card-link" href="./mellowconvert/" aria-label="Open MellowConvert app page"></a>
+          <div class="project-top">
+            <span class="app-icon icon-convert">MC</span>
+            <span class="platform-pill">macOS</span>
+          </div>
+          <div class="project-copy">
+            <p class="category">Utility</p>
+            <h3>MellowConvert</h3>
+            <p>Fast, private batch conversion for images and PDFs — entirely on your Mac.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-card" data-category="utility">
+          <a class="card-link" href="./MellowCat/" aria-label="Open MellowCat app page"></a>
+          <div class="project-top">
+            <img src="./MellowCat/app-icon.png" alt="" class="app-icon image-icon">
+            <span class="platform-pill">macOS</span>
+          </div>
+          <div class="project-copy">
+            <p class="category">Utility</p>
+            <h3>MellowCat</h3>
+            <p>A lightweight system monitor with a responsive desktop cat companion.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-card" data-category="creative">
+          <a class="card-link" href="./MellowSnap/" aria-label="Open MellowSnap app page"></a>
+          <div class="project-top">
+            <span class="app-icon icon-snap">MS</span>
+            <span class="platform-pill">iPhone</span>
+          </div>
+          <div class="project-copy">
+            <p class="category">Photo</p>
+            <h3>MellowSnap</h3>
+            <p>Preset camera and photo editing for soft, natural everyday moments.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-card" data-category="game">
+          <a class="card-link" href="./MellowLines2/" aria-label="Open MellowLines 2 app page"></a>
+          <div class="project-top">
+            <span class="app-icon icon-lines">L2</span>
+            <span class="platform-pill">iPhone · iPad</span>
+          </div>
+          <div class="project-copy">
+            <p class="category">Puzzle</p>
+            <h3>MellowLines 2</h3>
+            <p>Fill every cell with one continuous line across 1,000 handcrafted levels.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-card" data-category="creative">
+          <a class="card-link" href="./notegarden/" aria-label="Open NoteGarden app page"></a>
+          <div class="project-top">
+            <span class="app-icon icon-note">N</span>
+            <span class="platform-pill">Apple platforms</span>
+          </div>
+          <div class="project-copy">
+            <p class="category">Journal</p>
+            <h3>NoteGarden</h3>
+            <p>A gentle daily journal for capturing mood, photos, notes, and memories.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-card" data-category="utility">
+          <a class="card-link" href="./stashdeck/" aria-label="Open StashDeck app page"></a>
+          <div class="project-top">
+            <span class="app-icon icon-stash">S</span>
+            <span class="platform-pill">macOS</span>
+          </div>
+          <div class="project-copy">
+            <p class="category">Productivity</p>
+            <h3>StashDeck</h3>
+            <p>Save, search, organize, and reuse clipboard text, links, images, files, and code.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-card" data-category="utility">
+          <a class="card-link" href="./PinDeck/" aria-label="Open PinDeck app page"></a>
+          <div class="project-top">
+            <span class="app-icon icon-pin">P</span>
+            <span class="platform-pill">iPhone · iPad · Mac</span>
+          </div>
+          <div class="project-copy">
+            <p class="category">Productivity</p>
+            <h3>PinDeck</h3>
+            <p>Fast card-based notes with Quick Capture, widgets, tags, history, and iCloud sync.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-card" data-category="game">
+          <a class="card-link" href="./mellowisle/" aria-label="Open Mellow Isle app page"></a>
+          <div class="project-top">
+            <img src="./mellowisle/assets/app-icon.png" alt="" class="app-icon image-icon">
+            <span class="platform-pill">Puzzle</span>
+          </div>
+          <div class="project-copy">
+            <p class="category">Nonogram</p>
+            <h3>Mellow Isle</h3>
+            <p>A calm nonogram where every solved picture restores a pixel-art island.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-card" data-category="game">
+          <a class="card-link" href="./SudokuBurst/" aria-label="Open SudokuBurst app page"></a>
+          <div class="project-top">
+            <span class="app-icon icon-sudoku">9</span>
+            <span class="platform-pill">Puzzle</span>
+          </div>
+          <div class="project-copy">
+            <p class="category">Game</p>
+            <h3>SudokuBurst</h3>
+            <p>A strategic block puzzle on a Sudoku board with multiple challenge modes.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-card" data-category="game">
+          <a class="card-link" href="./NumberOrder/" aria-label="Open NumberOrder app page"></a>
+          <div class="project-top">
+            <span class="app-icon icon-number">123</span>
+            <span class="platform-pill">Puzzle</span>
+          </div>
+          <div class="project-copy">
+            <p class="category">Brain training</p>
+            <h3>NumberOrder</h3>
+            <p>Read the rule and tap numbers in the correct order — simple, fast, focused.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-card" data-category="utility">
+          <a class="card-link" href="./mellowtask/" aria-label="Open MellowTask app page"></a>
+          <div class="project-top">
+            <img src="./mellowtask/assets/app-icon.png" alt="" class="app-icon image-icon">
+            <span class="platform-pill">iPhone · iPad · Mac</span>
+          </div>
+          <div class="project-copy">
+            <p class="category">Productivity</p>
+            <h3>MellowTask</h3>
+            <p>Organize tasks by urgency and importance across your Apple devices.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-card" data-category="utility">
+          <a class="card-link" href="./statuslab/" aria-label="Open StatusLab app page"></a>
+          <div class="project-top">
+            <img src="./statuslab/assets/app-icon.png" alt="" class="app-icon image-icon">
+            <span class="platform-pill">iPhone</span>
+          </div>
+          <div class="project-copy">
+            <p class="category">Diagnostics</p>
+            <h3>StatusLab</h3>
+            <p>See device status, run guided hardware checks, and keep recent results nearby.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="tools-section" id="tools" aria-labelledby="tools-title">
+      <div class="tool-panel">
+        <div class="tool-visual" aria-hidden="true">
+          <div class="crop-frame">
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+            <div class="tool-file">PNG</div>
+          </div>
+          <div class="size-chip">1320 × 2868</div>
+        </div>
+        <div class="tool-copy">
+          <p class="eyebrow">Studio tool</p>
+          <h2 id="tools-title">App Assets</h2>
+          <p>Resize App Store screenshots, app icons, Toss assets, and custom images directly in the browser. No upload required.</p>
+          <a class="text-link" href="./app-assets/">Open App Assets <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">Designed and built with focus.</h2>
+      </div>
+      <div class="about-copy">
+        <p>Nicechann Studio is an independent software studio creating small, useful products for everyday life. Each project starts with a clear problem and aims to keep the experience simple.</p>
+        <p class="about-meta">Apps · Games · Utilities · Apple platforms</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Nicechann Studio</strong>
+      <p>Independent apps from Seoul.</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:nicechann@gmail.com">nicechann@gmail.com</a>
+      <a href="./privacy.html">Privacy</a>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Nicechann Studio.</p>
+  </footer>
 </body>
 </html>

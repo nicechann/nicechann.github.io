@@ -57,6 +57,12 @@ https://nicechann.github.io/notegarden/support.html
 Privacy Policy
 https://nicechann.github.io/notegarden/privacy.html
 ---
+아래 경로에 app-assets 을 만들어줘.
+
+/Users/nicechann/Dev/nicechann.github.io
+
+nicechann.github.io/app-assets
+---
 아래 경로에 MellowCat 을 만들고, MellowCat의 Support, Marketing, Privacy Policy URL 을 만들어줘.
 /Users/nicechann/Dev/nicechann.github.io
 
