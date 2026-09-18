@@ -1,0 +1,91 @@
+
+github url : 
+https://github.com/nicechann/nicechann.github.io
+
+---
+권장 방식으로 진행하고, 수정이 필요한 파일만 프로젝트 경로로 패치를 만들어서 패치는 다운로드 폴더 기준으로 아래 경로로 적용 명령어 작성해줘. commit 메세지도 국문으로 작성해줘.
+➜  mellowconvert git:(main) ✗ pwd
+/Users/nicechann/Dev/nicechann.github.io/mellowconvert
+➜  mellowconvert git:(main) ✗ ll
+total 8
+-rw-r--r--@ 1 nicechann  staff   3.4K  8월  4 14:11 index.html
+drwxr-xr-x@ 3 nicechann  staff    96B  8월  4 14:11 privacy
+drwxr-xr-x@ 3 nicechann  staff    96B  8월  4 14:11 support
+➜  mellowconvert git:(main) ✗
+---
+
+아래 url 참고해서 아래 경로에 새로 만들면 좋을것같아.
+https://apps.apple.com/kr/app/%EB%B8%94%EB%A1%9D-%ED%8D%BC%EC%A6%90-%EA%B2%8C%EC%9E%84-sudokuburst/id6759514103
+Support URL:
+https://nicechann.github.io/SudokuBurst/support.html
+Marketing URL:
+https://nicechann.github.io/SudokuBurst/
+Privacy Policy URL:
+https://nicechann.github.io/SudokuBurst/privacy.html
+
+➜  nicechann.github.io git:(main) ✗ pwd
+/Users/nicechann/Dev/nicechann.github.io
+
+---
+아래 경로에 PinDeck 을 만들고, NoteGarden의 Support, Marketing, Privacy Policy URL 을 만들어줘.
+/Users/nicechann/Dev/nicechann.github.io
+
+Marketing
+https://nicechann.github.io/pindeck/
+Support
+https://nicechann.github.io/notegarden/support.html
+Privacy Policy
+https://nicechann.github.io/notegarden/privacy.html
+---
+권장 방식으로 진행하고, 수정이 필요한 파일만 프로젝트 경로로 패치를 만들어서 패치는 다운로드 폴더 기준으로 아래 경로로 적용 명령어 작성해줘. commit 메세지도 국문으로 작성해줘.
+➜  notegarden git:(main) ✗ pwd
+/Users/nicechann/Dev/nicechann.github.io/notegarden
+➜  notegarden git:(main) ✗ ll
+total 8
+-rw-r--r--@ 1 nicechann  staff   3.4K  8월  4 14:11 index.html
+drwxr-xr-x@ 3 nicechann  staff    96B  8월  4 14:11 privacy
+drwxr-xr-x@ 3 nicechann  staff    96B  8월  4 14:11 support
+➜  notegarden git:(main) ✗
+
+아래 경로에 NoteGarden를 만들고, NoteGarden의 Support, Marketing, Privacy Policy URL 을 만들어줘.
+/Users/nicechann/Dev/nicechann.github.io
+
+Marketing
+https://nicechann.github.io/notegarden/
+Support
+https://nicechann.github.io/notegarden/support.html
+Privacy Policy
+https://nicechann.github.io/notegarden/privacy.html
+---
+아래 경로에 MellowCat 을 만들고, MellowCat의 Support, Marketing, Privacy Policy URL 을 만들어줘.
+/Users/nicechann/Dev/nicechann.github.io
+
+Support URL
+https://nicechann.github.io/MellowCat/support.html
+Marketing URL
+https://nicechann.github.io/MellowCat/
+Privacy Policy URL
+https://nicechann.github.io/MellowCat/privacy.html
+---
+아래 경로에 MellowLines2 를 만들고, MellowLines2의 Support, Marketing, Privacy Policy URL 을 만들어줘.
+/Users/nicechann/Dev/nicechann.github.io
+
+Support URL
+https://nicechann.github.io/MellowLines2/support.html
+Marketing URL
+https://nicechann.github.io/MellowLines2/
+Privacy Policy URL
+https://nicechann.github.io/MellowLines2/privacy.html
+---
+mellowconvert 마케팅 관련 페이지에 첨부 이미지를 넣어서 만들고싶어. 확인해줘 
+➜  mellowconvert git:(main) ll
+total 8
+-rw-r--r--@ 1 nicechann  staff   3.4K  8월  4 14:11 index.html
+drwxr-xr-x@ 3 nicechann  staff    96B  8월  4 14:11 privacy
+drwxr-xr-x@ 3 nicechann  staff    96B  8월  4 14:11 support
+➜  mellowconvert git:(main)
+➜  mellowconvert git:(main) pwd
+/Users/nicechann/Dev/nicechann.github.io/mellowconvert
+➜  mellowconvert git:(main)
+
+---

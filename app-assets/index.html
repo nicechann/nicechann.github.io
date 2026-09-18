@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Nicechann App Assets</title>
+  <meta name="description" content="App Store, Apps in Toss, 마케팅 이미지용 브라우저 이미지 리사이저" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">NICECHANN STUDIO</p>
+        <h1>App Asset Resizer</h1>
+        <p class="subtitle">App Store · Apps in Toss · Custom 이미지 규격을 브라우저에서 바로 맞춥니다.</p>
+      </div>
+      <div class="privacy-badge" title="서버 업로드 없이 브라우저에서 처리됩니다.">
+        <span class="dot"></span>
+        Local only
+      </div>
+    </header>
+
+    <section class="workspace">
+      <aside class="panel source-panel">
+        <div class="panel-heading">
+          <div>
+            <span class="step">01</span>
+            <h2>이미지</h2>
+          </div>
+          <button id="clearBtn" class="text-button" type="button">전체 삭제</button>
+        </div>
+
+        <label id="dropZone" class="drop-zone" for="fileInput">
+          <input id="fileInput" type="file" accept="image/png,image/jpeg,image/webp" multiple hidden />
+          <div class="drop-icon">＋</div>
+          <strong>이미지를 놓거나 클릭</strong>
+          <span>PNG · JPG · WEBP / 여러 장 선택 가능</span>
+        </label>
+
+        <div id="fileList" class="file-list" aria-live="polite"></div>
+      </aside>
+
+      <section class="panel preview-panel">
+        <div class="panel-heading">
+          <div>
+            <span class="step">02</span>
+            <h2>미리보기</h2>
+          </div>
+          <div id="imageMeta" class="meta-pill">이미지를 선택하세요</div>
+        </div>
+
+        <div id="canvasStage" class="canvas-stage empty">
+          <canvas id="previewCanvas"></canvas>
+          <div id="emptyState" class="empty-state">
+            <div class="empty-art"></div>
+            <p>왼쪽에서 이미지를 추가하세요.</p>
+          </div>
+        </div>
+
+        <div class="preview-toolbar">
+          <label class="range-field">
+            <span>확대</span>
+            <input id="zoomRange" type="range" min="0.25" max="3" step="0.01" value="1" disabled />
+            <output id="zoomValue">100%</output>
+          </label>
+          <div class="toolbar-actions">
+            <button id="centerBtn" class="secondary-button" type="button" disabled>가운데 맞춤</button>
+            <button id="resetBtn" class="secondary-button" type="button" disabled>초기화</button>
+          </div>
+        </div>
+        <p class="hint">이미지를 드래그해서 위치를 조절할 수 있습니다.</p>
+      </section>
+
+      <aside class="panel settings-panel">
+        <div class="panel-heading">
+          <div>
+            <span class="step">03</span>
+            <h2>출력 설정</h2>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="presetSelect">프리셋</label>
+          <select id="presetSelect">
+            <optgroup label="App Icon">
+              <option value="icon-1024" data-width="1024" data-height="1024">App Store Icon · 1024 × 1024</option>
+              <option value="toss-600" data-width="600" data-height="600">Apps in Toss · 600 × 600</option>
+            </optgroup>
+            <optgroup label="iPhone 6.9\"">
+              <option value="iphone69-1320" data-width="1320" data-height="2868" selected>iPhone 6.9 · 1320 × 2868</option>
+              <option value="iphone69-1290" data-width="1290" data-height="2796">iPhone 6.9 · 1290 × 2796</option>
+              <option value="iphone69-1260" data-width="1260" data-height="2736">iPhone 6.9 · 1260 × 2736</option>
+            </optgroup>
+            <optgroup label="iPhone 6.5\"">
+              <option value="iphone65-1284" data-width="1284" data-height="2778">iPhone 6.5 · 1284 × 2778</option>
+              <option value="iphone65-1242" data-width="1242" data-height="2688">iPhone 6.5 · 1242 × 2688</option>
+            </optgroup>
+            <optgroup label="iPhone 6.3\"">
+              <option value="iphone63-1206" data-width="1206" data-height="2622">iPhone 6.3 · 1206 × 2622</option>
+              <option value="iphone63-1179" data-width="1179" data-height="2556">iPhone 6.3 · 1179 × 2556</option>
+            </optgroup>
+            <optgroup label="iPad">
+              <option value="ipad13-2064" data-width="2064" data-height="2752">iPad 13 · 2064 × 2752</option>
+              <option value="ipad13-2048" data-width="2048" data-height="2732">iPad 13 · 2048 × 2732</option>
+            </optgroup>
+            <optgroup label="Mac">
+              <option value="mac-2880" data-width="2880" data-height="1800">Mac · 2880 × 1800</option>
+              <option value="mac-2560" data-width="2560" data-height="1600">Mac · 2560 × 1600</option>
+              <option value="mac-1440" data-width="1440" data-height="900">Mac · 1440 × 900</option>
+              <option value="mac-1280" data-width="1280" data-height="800">Mac · 1280 × 800</option>
+            </optgroup>
+            <optgroup label="기타">
+              <option value="portrait-1080" data-width="1080" data-height="1920">1080 × 1920</option>
+              <option value="square-1080" data-width="1080" data-height="1080">1080 × 1080</option>
+              <option value="custom">Custom</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="size-row">
+          <label>가로
+            <input id="widthInput" type="number" min="1" max="10000" value="1320" />
+          </label>
+          <button id="swapBtn" class="icon-button" type="button" title="가로/세로 바꾸기" aria-label="가로와 세로 바꾸기">⇄</button>
+          <label>세로
+            <input id="heightInput" type="number" min="1" max="10000" value="2868" />
+          </label>
+        </div>
+
+        <div class="field-group">
+          <span class="field-label">맞춤 방식</span>
+          <div class="segmented" role="radiogroup" aria-label="맞춤 방식">
+            <label><input type="radio" name="fit" value="cover" checked /><span>Cover</span></label>
+            <label><input type="radio" name="fit" value="contain" /><span>Contain</span></label>
+            <label><input type="radio" name="fit" value="stretch" /><span>Stretch</span></label>
+          </div>
+          <p class="field-help">Cover는 비율을 유지하고 꽉 채우며, Contain은 원본 전체를 보존합니다.</p>
+        </div>
+
+        <div class="inline-fields">
+          <label class="field-group color-field">배경
+            <span class="color-control">
+              <input id="backgroundInput" type="color" value="#ffffff" />
+              <input id="backgroundText" type="text" value="#FFFFFF" maxlength="7" />
+            </span>
+          </label>
+          <label class="field-group">포맷
+            <select id="formatSelect">
+              <option value="png">PNG</option>
+              <option value="jpeg">JPG</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="qualityGroup" class="field-group hidden">
+          <label for="qualityRange">JPG 품질 <output id="qualityValue">92%</output></label>
+          <input id="qualityRange" type="range" min="0.5" max="1" step="0.01" value="0.92" />
+        </div>
+
+        <div class="validation-card">
+          <div class="validation-title">출력 검사</div>
+          <div class="validation-row"><span>크기</span><strong id="validationSize">1320 × 2868</strong></div>
+          <div class="validation-row"><span>투명도</span><strong class="ok">없음</strong></div>
+          <div class="validation-row"><span>처리</span><strong>브라우저 로컬</strong></div>
+        </div>
+
+        <button id="downloadBtn" class="primary-button" type="button" disabled>현재 이미지 저장</button>
+        <button id="downloadAllBtn" class="secondary-button wide" type="button" disabled>전체 이미지 순차 저장</button>
+        <p class="download-note">여러 장 저장 시 브라우저가 여러 파일 다운로드 권한을 요청할 수 있습니다.</p>
+      </aside>
+    </section>
+
+    <footer>
+      <span>Nicechann Studio · App Asset Resizer</span>
+      <span>서버 전송 없음 · 이미지 처리는 Canvas API로만 수행</span>
+    </footer>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
