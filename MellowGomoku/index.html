@@ -48,30 +48,62 @@
       </div>
     </div>
 
-    <aside class="game-card" aria-label="MellowGomoku board preview">
-      <div class="game-top"><span>Mellow AI</span><strong>Renju</strong></div>
+    <aside class="game-card" aria-label="MellowGomoku game preview">
+      <div class="game-nav" aria-hidden="true">
+        <span class="game-nav-icon">‹</span>
+        <div class="game-mode">
+          <span data-lang="ko">보통 · 자유 오목</span>
+          <span data-lang="en">Normal · Freestyle</span>
+        </div>
+        <span class="game-nav-icon game-nav-more">•••</span>
+      </div>
+
+      <div class="player-row player-ai">
+        <span class="stone stone-white" aria-hidden="true"></span>
+        <strong>Mellow AI</strong>
+      </div>
+
       <div class="board-shell">
-        <svg class="board-svg" viewBox="0 0 420 420" role="img" aria-label="Gomoku board illustration">
+        <svg class="board-svg" viewBox="0 0 420 420" role="img" aria-label="MellowGomoku board illustration">
           <rect x="0" y="0" width="420" height="420" rx="12" fill="#f4ead8"/>
-          <g stroke="#8d877c" stroke-width="1.1">
-            <path d="M30 30H390 M30 54H390 M30 78H390 M30 102H390 M30 126H390 M30 150H390 M30 174H390 M30 198H390 M30 222H390 M30 246H390 M30 270H390 M30 294H390 M30 318H390 M30 342H390 M30 366H390 M30 390H390"/>
-            <path d="M30 30V390 M54 30V390 M78 30V390 M102 30V390 M126 30V390 M150 30V390 M174 30V390 M198 30V390 M222 30V390 M246 30V390 M270 30V390 M294 30V390 M318 30V390 M342 30V390 M366 30V390 M390 30V390"/>
+          <g stroke="#8d877c" stroke-width="1.05">
+            <path d="M30 30H390 M30 55.714H390 M30 81.429H390 M30 107.143H390 M30 132.857H390 M30 158.571H390 M30 184.286H390 M30 210H390 M30 235.714H390 M30 261.429H390 M30 287.143H390 M30 312.857H390 M30 338.571H390 M30 364.286H390 M30 390H390"/>
+            <path d="M30 30V390 M55.714 30V390 M81.429 30V390 M107.143 30V390 M132.857 30V390 M158.571 30V390 M184.286 30V390 M210 30V390 M235.714 30V390 M261.429 30V390 M287.143 30V390 M312.857 30V390 M338.571 30V390 M364.286 30V390 M390 30V390"/>
           </g>
-          <g fill="#625f58"><circle cx="126" cy="126" r="3.8"/><circle cx="294" cy="126" r="3.8"/><circle cx="210" cy="210" r="3.8"/><circle cx="126" cy="294" r="3.8"/><circle cx="294" cy="294" r="3.8"/></g>
-          <g>
-            <circle cx="198" cy="150" r="13" fill="#17191d"/><circle cx="222" cy="150" r="13" fill="#f8f5ee" stroke="#aaa398"/>
-            <circle cx="174" cy="174" r="13" fill="#17191d"/><circle cx="198" cy="174" r="13" fill="#f8f5ee" stroke="#aaa398"/>
-            <circle cx="222" cy="174" r="13" fill="#17191d"/><circle cx="246" cy="174" r="13" fill="#17191d"/>
-            <circle cx="174" cy="198" r="13" fill="#f8f5ee" stroke="#aaa398"/><circle cx="198" cy="198" r="13" fill="#f8f5ee" stroke="#aaa398"/>
-            <circle cx="222" cy="198" r="13" fill="#f8f5ee" stroke="#aaa398"/><circle cx="246" cy="198" r="13" fill="#17191d"/>
-            <circle cx="198" cy="222" r="13" fill="#17191d"/><circle cx="222" cy="222" r="13" fill="#f8f5ee" stroke="#aaa398"/>
-            <circle cx="198" cy="246" r="13" fill="#17191d"/><circle cx="222" cy="246" r="13" fill="#f8f5ee" stroke="#aaa398"/>
-            <circle cx="246" cy="246" r="13" fill="#17191d"/><circle cx="270" cy="246" r="13" fill="#17191d"/>
+          <g fill="#625f58">
+            <circle cx="107.143" cy="107.143" r="3.8"/><circle cx="312.857" cy="107.143" r="3.8"/>
+            <circle cx="210" cy="210" r="3.8"/>
+            <circle cx="107.143" cy="312.857" r="3.8"/><circle cx="312.857" cy="312.857" r="3.8"/>
+          </g>
+          <g class="stones">
+            <circle cx="210" cy="132.857" r="13" class="black-stone"/><circle cx="235.714" cy="132.857" r="13" class="white-stone"/>
+            <circle cx="184.286" cy="158.571" r="13" class="black-stone"/><circle cx="210" cy="158.571" r="13" class="white-stone last-stone"/>
+            <circle cx="235.714" cy="158.571" r="13" class="black-stone"/><circle cx="261.429" cy="158.571" r="13" class="black-stone"/>
+            <circle cx="184.286" cy="184.286" r="13" class="white-stone"/><circle cx="210" cy="184.286" r="13" class="white-stone"/>
+            <circle cx="235.714" cy="184.286" r="13" class="white-stone"/><circle cx="261.429" cy="184.286" r="13" class="black-stone"/>
+            <circle cx="184.286" cy="210" r="13" class="black-stone"/><circle cx="210" cy="210" r="13" class="white-stone"/>
+            <circle cx="235.714" cy="210" r="13" class="white-stone"/><circle cx="261.429" cy="210" r="13" class="black-stone"/>
+            <circle cx="210" cy="235.714" r="13" class="black-stone"/><circle cx="235.714" cy="235.714" r="13" class="white-stone"/>
+            <circle cx="184.286" cy="261.429" r="13" class="black-stone"/><circle cx="210" cy="261.429" r="13" class="white-stone"/>
+            <circle cx="235.714" cy="261.429" r="13" class="black-stone"/><circle cx="261.429" cy="261.429" r="13" class="white-stone"/>
+            <circle cx="184.286" cy="287.143" r="13" class="black-stone"/><circle cx="210" cy="287.143" r="13" class="white-stone"/>
+            <circle cx="235.714" cy="287.143" r="13" class="black-stone"/><circle cx="287.143" cy="287.143" r="13" class="black-stone"/>
+            <circle cx="210" cy="312.857" r="13" class="black-stone"/>
+            <circle cx="210" cy="158.571" r="4.2" class="last-move-dot"/>
           </g>
         </svg>
       </div>
-      <div class="turn-row"><span class="turn-dot"></span><span data-lang="ko">당신의 차례</span><span data-lang="en">Your turn</span></div>
-      <div class="game-actions"><span data-lang="ko">무르기</span><span data-lang="en">Undo</span><span data-lang="ko">기권</span><span data-lang="en">Resign</span></div>
+
+      <div class="player-row player-you">
+        <span class="turn-dot" aria-hidden="true"></span>
+        <span class="stone stone-black" aria-hidden="true"></span>
+        <strong>YOU</strong>
+      </div>
+
+      <div class="game-actions">
+        <div class="game-action"><span data-lang="ko">무르기 (3)</span><span data-lang="en">Undo (3)</span></div>
+        <div class="game-action"><span data-lang="ko">기권</span><span data-lang="en">Resign</span></div>
+      </div>
     </aside>
   </section>
 

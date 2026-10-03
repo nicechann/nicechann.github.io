@@ -3,7 +3,8 @@ github url :
 https://github.com/nicechann/nicechann.github.io
 
 ---
-권장 방식으로 진행하고, 수정이 필요한 파일만 프로젝트 경로로 패치를 만들어서 패치는 다운로드 폴더 기준으로 아래 경로로 적용 명령어 작성해줘. commit 메세지도 국문으로 작성해줘.
+권장 방식으로 진행하고, 
+수정이 필요한 파일만 프로젝트 경로로 패치를 만들어서 패치는 다운로드 폴더 기준으로 아래 경로로 적용 명령어 작성해줘. commit 메세지도 국문으로 작성해줘.
 ➜  mellowconvert git:(main) ✗ pwd
 /Users/nicechann/Dev/nicechann.github.io/mellowconvert
 ➜  mellowconvert git:(main) ✗ ll
@@ -23,9 +24,9 @@ https://nicechann.github.io/SudokuBurst/
 Privacy Policy URL:
 https://nicechann.github.io/SudokuBurst/privacy.html
 
+수정이 필요한 파일만 프로젝트 경로로 패치를 만들어서 패치는 다운로드 폴더 기준으로 아래 경로로 적용 명령어 작성해줘. commit 메세지도 국문으로 작성해줘.
 ➜  nicechann.github.io git:(main) ✗ pwd
 /Users/nicechann/Dev/nicechann.github.io
-
 ---
 아래 경로에 PinDeck 을 만들고, NoteGarden의 Support, Marketing, Privacy Policy URL 을 만들어줘.
 /Users/nicechann/Dev/nicechann.github.io
@@ -37,7 +38,8 @@ https://nicechann.github.io/notegarden/support.html
 Privacy Policy
 https://nicechann.github.io/notegarden/privacy.html
 ---
-권장 방식으로 진행하고, 수정이 필요한 파일만 프로젝트 경로로 패치를 만들어서 패치는 다운로드 폴더 기준으로 아래 경로로 적용 명령어 작성해줘. commit 메세지도 국문으로 작성해줘.
+권장 방식으로 진행하고, 
+수정이 필요한 파일만 프로젝트 경로로 패치를 만들어서 패치는 다운로드 폴더 기준으로 아래 경로로 적용 명령어 작성해줘. commit 메세지도 국문으로 작성해줘.
 ➜  notegarden git:(main) ✗ pwd
 /Users/nicechann/Dev/nicechann.github.io/notegarden
 ➜  notegarden git:(main) ✗ ll
@@ -63,15 +65,29 @@ https://nicechann.github.io/notegarden/privacy.html
 
 nicechann.github.io/app-assets
 ---
-아래 경로에 MellowCat 을 만들고, MellowCat의 Support, Marketing, Privacy Policy URL 을 만들어줘.
+아래 경로에 SudokuLearnLogic 을 만들고, SudokuLearnLogic Support, Marketing, Privacy Policy URL 을 만들어줘.
 /Users/nicechann/Dev/nicechann.github.io
 
 Support URL
-https://nicechann.github.io/MellowCat/support.html
+https://nicechann.github.io/SudokuLearnLogic/support.html
 Marketing URL
-https://nicechann.github.io/MellowCat/
+https://nicechann.github.io/SudokuLearnLogic/
 Privacy Policy URL
-https://nicechann.github.io/MellowCat/privacy.html
+https://nicechann.github.io/SudokuLearnLogic/privacy.html
+---
+아래 경로에 MellowGomoku 을 만들고, MellowGomoku의 Support, Marketing, Privacy Policy URL 을 만들어줘.
+/Users/nicechann/Dev/nicechann.github.io
+
+Support URL
+https://nicechann.github.io/MellowGomoku/support.html
+Marketing URL
+https://nicechann.github.io/MellowGomoku/
+Privacy Policy URL
+https://nicechann.github.io/MellowGomoku/privacy.html
+
+
+➜  nicechann.github.io git:(main) ✗ pwd
+/Users/nicechann/Dev/nicechann.github.io
 ---
 아래 경로에 MellowCat 을 만들고, MellowCat의 Support, Marketing, Privacy Policy URL 을 만들어줘.
 /Users/nicechann/Dev/nicechann.github.io
