@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko" data-language="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111216">
+  <meta name="description" content="MellowGomoku — AI와 자유 오목·렌주를 즐기고, 금수 안내와 복기로 한 수씩 돌아볼 수 있는 iPhone과 iPad용 오목 게임.">
+  <link rel="canonical" href="https://nicechann.github.io/MellowGomoku/">
+  <meta property="og:title" content="MellowGomoku — A calm way to play Gomoku">
+  <meta property="og:description" content="Play Gomoku or Renju against Mellow AI, learn forbidden moves, and review every move after the game.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nicechann.github.io/MellowGomoku/">
+  <title>MellowGomoku — Gomoku & Renju</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="./" aria-label="MellowGomoku home"><span class="brand-mark" aria-hidden="true"></span><span>MellowGomoku</span></a>
+    <div class="nav-links">
+      <a href="#features"><span data-lang="ko">기능</span><span data-lang="en">Features</span></a>
+      <a href="support.html"><span data-lang="ko">지원</span><span data-lang="en">Support</span></a>
+      <a href="privacy.html"><span data-lang="ko">개인정보처리방침</span><span data-lang="en">Privacy</span></a>
+      <div class="lang-switch" aria-label="Language">
+        <button type="button" data-language-button="ko">KO</button>
+        <button type="button" data-language-button="en">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap hero">
+    <div>
+      <div class="eyebrow">Gomoku · Renju · Mellow AI</div>
+      <div data-lang="ko">
+        <h1>차분하게 즐기는<br><span>오목 한 판.</span></h1>
+        <p class="hero-copy">자유 오목과 렌주를 원하는 방식으로 설정하고 Mellow AI와 대국하세요. 렌주 금수는 앱이 미리 표시하고, 대국이 끝난 뒤에는 한 수씩 복기할 수 있습니다.</p>
+        <div class="actions"><a class="button primary" href="#features">주요 기능 보기</a><a class="button" href="support.html">지원</a></div>
+        <div class="hero-note">iPhone & iPad · Korean / English / Japanese / Simplified Chinese / Traditional Chinese</div>
+      </div>
+      <div data-lang="en">
+        <h1>A calmer way<br><span>to play Gomoku.</span></h1>
+        <p class="hero-copy">Choose Freestyle Gomoku or Renju, tune the match to your style, and play against Mellow AI. Renju forbidden moves can be shown before you play, and every finished game can be reviewed move by move.</p>
+        <div class="actions"><a class="button primary" href="#features">Explore Features</a><a class="button" href="support.html">Support</a></div>
+        <div class="hero-note">iPhone & iPad · Korean / English / Japanese / Simplified Chinese / Traditional Chinese</div>
+      </div>
+    </div>
+
+    <aside class="game-card" aria-label="MellowGomoku board preview">
+      <div class="game-top"><span>Mellow AI</span><strong>Renju</strong></div>
+      <div class="board-shell">
+        <svg class="board-svg" viewBox="0 0 420 420" role="img" aria-label="Gomoku board illustration">
+          <rect x="0" y="0" width="420" height="420" rx="12" fill="#f4ead8"/>
+          <g stroke="#8d877c" stroke-width="1.1">
+            <path d="M30 30H390 M30 54H390 M30 78H390 M30 102H390 M30 126H390 M30 150H390 M30 174H390 M30 198H390 M30 222H390 M30 246H390 M30 270H390 M30 294H390 M30 318H390 M30 342H390 M30 366H390 M30 390H390"/>
+            <path d="M30 30V390 M54 30V390 M78 30V390 M102 30V390 M126 30V390 M150 30V390 M174 30V390 M198 30V390 M222 30V390 M246 30V390 M270 30V390 M294 30V390 M318 30V390 M342 30V390 M366 30V390 M390 30V390"/>
+          </g>
+          <g fill="#625f58"><circle cx="126" cy="126" r="3.8"/><circle cx="294" cy="126" r="3.8"/><circle cx="210" cy="210" r="3.8"/><circle cx="126" cy="294" r="3.8"/><circle cx="294" cy="294" r="3.8"/></g>
+          <g>
+            <circle cx="198" cy="150" r="13" fill="#17191d"/><circle cx="222" cy="150" r="13" fill="#f8f5ee" stroke="#aaa398"/>
+            <circle cx="174" cy="174" r="13" fill="#17191d"/><circle cx="198" cy="174" r="13" fill="#f8f5ee" stroke="#aaa398"/>
+            <circle cx="222" cy="174" r="13" fill="#17191d"/><circle cx="246" cy="174" r="13" fill="#17191d"/>
+            <circle cx="174" cy="198" r="13" fill="#f8f5ee" stroke="#aaa398"/><circle cx="198" cy="198" r="13" fill="#f8f5ee" stroke="#aaa398"/>
+            <circle cx="222" cy="198" r="13" fill="#f8f5ee" stroke="#aaa398"/><circle cx="246" cy="198" r="13" fill="#17191d"/>
+            <circle cx="198" cy="222" r="13" fill="#17191d"/><circle cx="222" cy="222" r="13" fill="#f8f5ee" stroke="#aaa398"/>
+            <circle cx="198" cy="246" r="13" fill="#17191d"/><circle cx="222" cy="246" r="13" fill="#f8f5ee" stroke="#aaa398"/>
+            <circle cx="246" cy="246" r="13" fill="#17191d"/><circle cx="270" cy="246" r="13" fill="#17191d"/>
+          </g>
+        </svg>
+      </div>
+      <div class="turn-row"><span class="turn-dot"></span><span data-lang="ko">당신의 차례</span><span data-lang="en">Your turn</span></div>
+      <div class="game-actions"><span data-lang="ko">무르기</span><span data-lang="en">Undo</span><span data-lang="ko">기권</span><span data-lang="en">Resign</span></div>
+    </aside>
+  </section>
+
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Play your way</div>
+        <div data-lang="ko"><h2>규칙은 정확하게, 플레이는 편안하게.</h2><p>오목을 처음 접하는 사람부터 익숙한 플레이어까지 필요한 기능을 한 흐름 안에 담았습니다.</p></div>
+        <div data-lang="en"><h2>Precise rules. Relaxed play.</h2><p>From a first match to deeper Renju practice, MellowGomoku keeps the essentials in one focused flow.</p></div>
+      </div>
+      <div class="grid">
+        <article class="card featured"><div class="icon">AI</div><h3 data-lang="ko">Mellow AI</h3><h3 data-lang="en">Mellow AI</h3><p data-lang="ko">입문·쉬움·보통·어려움·고수의 5단계 난이도에서 원하는 수준으로 대국하세요.</p><p data-lang="en">Choose from five AI levels: Beginner, Easy, Normal, Hard, and Expert.</p></article>
+        <article class="card"><div class="icon">●</div><h3 data-lang="ko">자유 오목과 렌주</h3><h3 data-lang="en">Gomoku & Renju</h3><p data-lang="ko">금수 없는 자유 오목과 흑에게 33·44·장목 제한이 적용되는 렌주를 선택할 수 있습니다.</p><p data-lang="en">Switch between Freestyle Gomoku and Renju with black-only forbidden-move rules.</p></article>
+        <article class="card"><div class="icon">×</div><h3 data-lang="ko">금수 표시와 설명</h3><h3 data-lang="en">Forbidden move guidance</h3><p data-lang="ko">렌주에서 흑이 둘 수 없는 자리를 미리 표시하고, 선택하면 이유를 확인할 수 있습니다.</p><p data-lang="en">See forbidden intersections before playing as Black in Renju, with an explanation of why they are restricted.</p></article>
+        <article class="card"><div class="icon">↶</div><h3 data-lang="ko">무르기</h3><h3 data-lang="en">Undo</h3><p data-lang="ko">오프라인 대국에서 필요한 순간 수를 되돌리고 다시 생각할 수 있습니다.</p><p data-lang="en">Step back during supported offline matches when you want another look at the position.</p></article>
+        <article class="card"><div class="icon">▶</div><h3 data-lang="ko">복기와 다시 두기</h3><h3 data-lang="en">Replay & practice</h3><p data-lang="ko">대국이 끝난 뒤 수순을 한 수씩 확인하고, 원하는 지점부터 다시 두며 흐름을 복습하세요.</p><p data-lang="en">Review a finished match move by move and practice again from a selected position.</p></article>
+        <article class="card"><div class="icon">◎</div><h3 data-lang="ko">내 방식대로 설정</h3><h3 data-lang="en">Match settings</h3><p data-lang="ko">내 돌 색상, 한 수 제한시간, 금수 표시 여부를 대국 전에 원하는 방식으로 정할 수 있습니다.</p><p data-lang="en">Choose your stone color, per-move time limit, and whether forbidden moves are shown.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Rules</div>
+        <div data-lang="ko"><h2>두 가지 규칙, 분명한 차이.</h2></div>
+        <div data-lang="en"><h2>Two rule sets, clearly explained.</h2></div>
+      </div>
+      <div class="rule-band">
+        <article class="rule-card"><span class="rule-badge">Freestyle Gomoku</span><h3 data-lang="ko">자유 오목</h3><h3 data-lang="en">Freestyle Gomoku</h3><p data-lang="ko">흑과 백 모두 금수 없이 플레이하며, 가로·세로·대각선으로 5개 이상 연결하면 승리합니다.</p><p data-lang="en">Both sides play without forbidden moves. Connect five or more stones horizontally, vertically, or diagonally to win.</p></article>
+        <article class="rule-card"><span class="rule-badge">Renju</span><h3 data-lang="ko">렌주</h3><h3 data-lang="en">Renju</h3><p data-lang="ko">흑은 첫 수를 중앙에 두며, 33·44·장목이 금수입니다. 흑은 정확히 5개로 승리하고 백은 5개 이상이면 승리합니다.</p><p data-lang="en">Black starts at the center and is restricted by double-three, double-four, and overline rules. Black wins with exactly five; White wins with five or more.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap cta">
+    <div data-lang="ko"><h2>궁금한 점이 있나요?</h2><p>대국 규칙, 구매 복원, 광고, Game Center 관련 도움말을 확인하세요.</p></div>
+    <div data-lang="en"><h2>Need help?</h2><p>Find answers about rules, purchase restoration, ads, and Game Center.</p></div>
+    <a class="button primary" href="support.html"><span data-lang="ko">지원 페이지</span><span data-lang="en">Support</span></a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap footer-inner"><span>© 2026 NICECHANN STUDIO · MellowGomoku</span><nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="https://nicechann.github.io/">Nicechann Studio</a></nav></div>
+</footer>
+</body>
+</html>
